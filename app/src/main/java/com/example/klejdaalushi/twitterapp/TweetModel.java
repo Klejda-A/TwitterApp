@@ -25,7 +25,7 @@ public class TweetModel {
 
     }
 
-    private TweetModel(JSONArray jsonArray){
+    public TweetModel(JSONArray jsonArray){
         for (int i = 0; i < jsonArray.length(); i++) {
             Tweet tweet;
             try {
