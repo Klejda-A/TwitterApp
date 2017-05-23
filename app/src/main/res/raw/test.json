@@ -1,0 +1,3452 @@
+{
+  "statuses": [
+    {
+      "created_at": "Thu Apr 06 06:23:51 +0000 2017",
+      "id": 849870248715202560,
+      "id_str": "849870248715202560",
+      "text": "@Naomi_Z @GymApeldoorn @stadsLAB_Saxion Interessant. Heb je een link naar het spel?",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "Naomi_Z",
+            "name": "Naomi Zijderveld",
+            "id": 4901385327,
+            "id_str": "4901385327",
+            "indices": [
+              0,
+              8
+            ]
+          },
+          {
+            "screen_name": "GymApeldoorn",
+            "name": "Gymnasium Apeldoorn",
+            "id": 793757114,
+            "id_str": "793757114",
+            "indices": [
+              9,
+              22
+            ]
+          },
+          {
+            "screen_name": "stadsLAB_Saxion",
+            "name": "stadsLAB Saxion",
+            "id": 2902053045,
+            "id_str": "2902053045",
+            "indices": [
+              23,
+              39
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+      "in_reply_to_status_id": 849526533656125440,
+      "in_reply_to_status_id_str": "849526533656125440",
+      "in_reply_to_user_id": 4901385327,
+      "in_reply_to_user_id_str": "4901385327",
+      "in_reply_to_screen_name": "Naomi_Z",
+      "user": {
+        "id": 105102483,
+        "id_str": "105102483",
+        "name": "Mathijs Booden",
+        "screen_name": "MBoodenAK",
+        "location": "Leiden",
+        "description": "Geologist & geography teacher.",
+        "url": "http:\/\/t.co\/lOw0nw1Yv0",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/lOw0nw1Yv0",
+                "expanded_url": "http:\/\/www.academia.edu\/mathijsbooden",
+                "display_url": "academia.edu\/mathijsbooden",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 364,
+        "friends_count": 393,
+        "listed_count": 25,
+        "created_at": "Fri Jan 15 10:59:07 +0000 2010",
+        "favourites_count": 3482,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 6112,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "1A1B1F",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/608343952979312640\/NZZLmmZT_normal.jpg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/608343952979312640\/NZZLmmZT_normal.jpg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/105102483\/1491402569",
+        "profile_link_color": "2FC2EF",
+        "profile_sidebar_border_color": "181A1E",
+        "profile_sidebar_fill_color": "252429",
+        "profile_text_color": "666666",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Thu Apr 06 05:26:56 +0000 2017",
+      "id": 849855923992625152,
+      "id_str": "849855923992625152",
+      "text": "RT @SCorporaal: Krachtige combinatie #Eshuis @MarkdeLat en #Saxion @ErikHorsthuis : zsm 1e case MOOC Business Analytics online! #twentseinn\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "Eshuis",
+            "indices": [
+              37,
+              44
+            ]
+          },
+          {
+            "text": "Saxion",
+            "indices": [
+              59,
+              66
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "SCorporaal",
+            "name": "Stephan Corporaal",
+            "id": 47133893,
+            "id_str": "47133893",
+            "indices": [
+              3,
+              14
+            ]
+          },
+          {
+            "screen_name": "MarkdeLat",
+            "name": "Mark de Lat",
+            "id": 90016544,
+            "id_str": "90016544",
+            "indices": [
+              45,
+              55
+            ]
+          },
+          {
+            "screen_name": "ErikHorsthuis",
+            "name": "Erik Horsthuis",
+            "id": 116201611,
+            "id_str": "116201611",
+            "indices": [
+              67,
+              81
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter for iPad\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 24223268,
+        "id_str": "24223268",
+        "name": "Bas Olde Hampsink",
+        "screen_name": "Basoh",
+        "location": "Enschede Deventer Tubbergen",
+        "description": "Saxion Innovatie Team, Stichting Fris, Stichting 'Hof van Tubbergen', HBO-platform Topsector 'Creatieve Industrie'",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 474,
+        "friends_count": 329,
+        "listed_count": 20,
+        "created_at": "Fri Mar 13 18:34:43 +0000 2009",
+        "favourites_count": 43,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 930,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/419030938933133312\/X1tQrutq_normal.jpeg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/419030938933133312\/X1tQrutq_normal.jpeg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Wed Apr 05 17:13:31 +0000 2017",
+        "id": 849671352881733632,
+        "id_str": "849671352881733632",
+        "text": "Krachtige combinatie #Eshuis @MarkdeLat en #Saxion @ErikHorsthuis : zsm 1e case MOOC Business Analytics online! #twentseinnovatie",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Eshuis",
+              "indices": [
+                21,
+                28
+              ]
+            },
+            {
+              "text": "Saxion",
+              "indices": [
+                43,
+                50
+              ]
+            },
+            {
+              "text": "twentseinnovatie",
+              "indices": [
+                112,
+                129
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "MarkdeLat",
+              "name": "Mark de Lat",
+              "id": 90016544,
+              "id_str": "90016544",
+              "indices": [
+                29,
+                39
+              ]
+            },
+            {
+              "screen_name": "ErikHorsthuis",
+              "name": "Erik Horsthuis",
+              "id": 116201611,
+              "id_str": "116201611",
+              "indices": [
+                51,
+                65
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 47133893,
+          "id_str": "47133893",
+          "name": "Stephan Corporaal",
+          "screen_name": "SCorporaal",
+          "location": "Enschede",
+          "description": "Associate Lector HRM & Smart Industry | Lectoraat Smart Industry & Human Capital | Leren&werken in de 21e eeuw | TechYourFuture | Filosofie | Reizen",
+          "url": "http:\/\/t.co\/UOVYasxpAo",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http:\/\/t.co\/UOVYasxpAo",
+                  "expanded_url": "http:\/\/saxion.nl\/smartindustry",
+                  "display_url": "saxion.nl\/smartindustry",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 888,
+          "friends_count": 287,
+          "listed_count": 32,
+          "created_at": "Sun Jun 14 17:35:48 +0000 2009",
+          "favourites_count": 363,
+          "utc_offset": 7200,
+          "time_zone": "Amsterdam",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 4382,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+          "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/47133893\/1477054634",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "nl"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 20:36:45 +0000 2017",
+      "id": 849722497570402304,
+      "id_str": "849722497570402304",
+      "text": "Leuk om jullie te zien @beursvloerdev bij @saxion. Kunnen onze stadsLABoranten misschien iets voor jullie betekenen? https:\/\/t.co\/y3bakC2VRq",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "beursvloerdev",
+            "name": "deventerbeursvloer",
+            "id": 702515816932241408,
+            "id_str": "702515816932241408",
+            "indices": [
+              23,
+              37
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              42,
+              49
+            ]
+          }
+        ],
+        "urls": [],
+        "media": [
+          {
+            "id": 849722495234191361,
+            "id_str": "849722495234191361",
+            "indices": [
+              117,
+              140
+            ],
+            "media_url": "http:\/\/pbs.twimg.com\/media\/C8rSG34XsAEzJWI.jpg",
+            "media_url_https": "https:\/\/pbs.twimg.com\/media\/C8rSG34XsAEzJWI.jpg",
+            "url": "https:\/\/t.co\/y3bakC2VRq",
+            "display_url": "pic.twitter.com\/y3bakC2VRq",
+            "expanded_url": "https:\/\/twitter.com\/stadsLAB_Saxion\/status\/849722497570402304\/photo\/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1024,
+                "h": 577,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1024,
+                "h": 577,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 849722495234191361,
+            "id_str": "849722495234191361",
+            "indices": [
+              117,
+              140
+            ],
+            "media_url": "http:\/\/pbs.twimg.com\/media\/C8rSG34XsAEzJWI.jpg",
+            "media_url_https": "https:\/\/pbs.twimg.com\/media\/C8rSG34XsAEzJWI.jpg",
+            "url": "https:\/\/t.co\/y3bakC2VRq",
+            "display_url": "pic.twitter.com\/y3bakC2VRq",
+            "expanded_url": "https:\/\/twitter.com\/stadsLAB_Saxion\/status\/849722497570402304\/photo\/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 383,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1024,
+                "h": 577,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1024,
+                "h": 577,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter for iPad\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 2902053045,
+        "id_str": "2902053045",
+        "name": "stadsLAB Saxion",
+        "screen_name": "stadsLAB_Saxion",
+        "location": "Deventer, Nederland",
+        "description": "Student, docent, onderzoeker & professional werken samen aan vraagstukken rondom bestuur en ruimte in en om de stad. Vanaf sept. ook 'Klimaat en Management'",
+        "url": "https:\/\/t.co\/QwpyOl8tSJ",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/QwpyOl8tSJ",
+                "expanded_url": "http:\/\/www.saxion.nl\/stadslab",
+                "display_url": "saxion.nl\/stadslab",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 690,
+        "friends_count": 436,
+        "listed_count": 16,
+        "created_at": "Tue Dec 02 09:08:03 +0000 2014",
+        "favourites_count": 85,
+        "utc_offset": 7200,
+        "time_zone": "Ljubljana",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 2041,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/644869349677772801\/ETmjplt8_normal.png",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/644869349677772801\/ETmjplt8_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2902053045\/1460473515",
+        "profile_link_color": "00853A",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 20:26:26 +0000 2017",
+      "id": 849719904571973633,
+      "id_str": "849719904571973633",
+      "text": "Dagelijks is te zien &amp; te lezen waarom wij starten met de studie Klimaat en Management https:\/\/t.co\/z40fdJANg2 (34) https:\/\/t.co\/wb4tuYwUSt",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https:\/\/t.co\/z40fdJANg2",
+            "expanded_url": "http:\/\/saxion.nl\/km",
+            "display_url": "saxion.nl\/km",
+            "indices": [
+              91,
+              114
+            ]
+          },
+          {
+            "url": "https:\/\/t.co\/wb4tuYwUSt",
+            "expanded_url": "https:\/\/fd.nl\/ondernemen\/1195597\/banken-zetten-fors-geld-opzij-voor-vergroening-kantoorpanden?utm_source=nieuwsbrief&utm_campaign=fd-ochtendnieuwsbrief&utm_medium=email&utm_content=20170405&s_cid=671",
+            "display_url": "fd.nl\/ondernemen\/119\u2026",
+            "indices": [
+              120,
+              143
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter for iPad\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 2902053045,
+        "id_str": "2902053045",
+        "name": "stadsLAB Saxion",
+        "screen_name": "stadsLAB_Saxion",
+        "location": "Deventer, Nederland",
+        "description": "Student, docent, onderzoeker & professional werken samen aan vraagstukken rondom bestuur en ruimte in en om de stad. Vanaf sept. ook 'Klimaat en Management'",
+        "url": "https:\/\/t.co\/QwpyOl8tSJ",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/QwpyOl8tSJ",
+                "expanded_url": "http:\/\/www.saxion.nl\/stadslab",
+                "display_url": "saxion.nl\/stadslab",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 690,
+        "friends_count": 436,
+        "listed_count": 16,
+        "created_at": "Tue Dec 02 09:08:03 +0000 2014",
+        "favourites_count": 85,
+        "utc_offset": 7200,
+        "time_zone": "Ljubljana",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 2041,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/644869349677772801\/ETmjplt8_normal.png",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/644869349677772801\/ETmjplt8_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2902053045\/1460473515",
+        "profile_link_color": "00853A",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 20:04:30 +0000 2017",
+      "id": 849714385085804544,
+      "id_str": "849714385085804544",
+      "text": "@ToMorssink @JanWillemNuis @Inuk62 Yes, #Saxion wil graag een tweegesprek met jullie over reflectie op dagelijkse w\u2026 https:\/\/t.co\/w4juacBMKP",
+      "truncated": true,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "Saxion",
+            "indices": [
+              40,
+              47
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "ToMorssink",
+            "name": "Tom Morssink",
+            "id": 302261046,
+            "id_str": "302261046",
+            "indices": [
+              0,
+              11
+            ]
+          },
+          {
+            "screen_name": "JanWillemNuis",
+            "name": "Jan Willem Nuis",
+            "id": 47956846,
+            "id_str": "47956846",
+            "indices": [
+              12,
+              26
+            ]
+          },
+          {
+            "screen_name": "Inuk62",
+            "name": "Ineke van Kruining",
+            "id": 168414599,
+            "id_str": "168414599",
+            "indices": [
+              27,
+              34
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https:\/\/t.co\/w4juacBMKP",
+            "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/849714385085804544",
+            "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+      "in_reply_to_status_id": 849712686833250307,
+      "in_reply_to_status_id_str": "849712686833250307",
+      "in_reply_to_user_id": 302261046,
+      "in_reply_to_user_id_str": "302261046",
+      "in_reply_to_screen_name": "ToMorssink",
+      "user": {
+        "id": 47133893,
+        "id_str": "47133893",
+        "name": "Stephan Corporaal",
+        "screen_name": "SCorporaal",
+        "location": "Enschede",
+        "description": "Associate Lector HRM & Smart Industry | Lectoraat Smart Industry & Human Capital | Leren&werken in de 21e eeuw | TechYourFuture | Filosofie | Reizen",
+        "url": "http:\/\/t.co\/UOVYasxpAo",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/UOVYasxpAo",
+                "expanded_url": "http:\/\/saxion.nl\/smartindustry",
+                "display_url": "saxion.nl\/smartindustry",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 888,
+        "friends_count": 287,
+        "listed_count": 32,
+        "created_at": "Sun Jun 14 17:35:48 +0000 2009",
+        "favourites_count": 363,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 4382,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+        "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/47133893\/1477054634",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 19:37:02 +0000 2017",
+      "id": 849707469911752705,
+      "id_str": "849707469911752705",
+      "text": "RT @Joost_ten_Bulte: Vanmiddag alweer de 11e editie van de #Deventer beursvloer. Ik ben er bij! @Saxion @BuroMBODeventer https:\/\/t.co\/JuJ26\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "Deventer",
+            "indices": [
+              59,
+              68
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "Joost_ten_Bulte",
+            "name": "Joost ten Bulte",
+            "id": 160842482,
+            "id_str": "160842482",
+            "indices": [
+              3,
+              19
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              96,
+              103
+            ]
+          },
+          {
+            "screen_name": "BuroMBODeventer",
+            "name": "buroMBO Deventer",
+            "id": 121090069,
+            "id_str": "121090069",
+            "indices": [
+              104,
+              120
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 116765529,
+        "id_str": "116765529",
+        "name": "Margriet de Jager",
+        "screen_name": "MargrietdeJager",
+        "location": "Deventer",
+        "description": "Alcyon PublicHealth| lid programmabureau Allesisgezondheid|strafrecht|jurist|raadslid Deventer|VNGbestuur|positief denken|debatleider en koppelaarster.",
+        "url": "https:\/\/t.co\/2i9BcGIfwb",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/2i9BcGIfwb",
+                "expanded_url": "http:\/\/www.alcyonph.nl",
+                "display_url": "alcyonph.nl",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1534,
+        "friends_count": 989,
+        "listed_count": 75,
+        "created_at": "Tue Feb 23 14:18:42 +0000 2010",
+        "favourites_count": 3349,
+        "utc_offset": -7200,
+        "time_zone": "Greenland",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 17165,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/673079867085185025\/hXdUgp63_normal.png",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/673079867085185025\/hXdUgp63_normal.png",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/116765529\/1476213797",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Wed Apr 05 06:37:35 +0000 2017",
+        "id": 849511317392306176,
+        "id_str": "849511317392306176",
+        "text": "Vanmiddag alweer de 11e editie van de #Deventer beursvloer. Ik ben er bij! @Saxion @BuroMBODeventer https:\/\/t.co\/JuJ26RD8xu",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Deventer",
+              "indices": [
+                38,
+                47
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "Saxion",
+              "name": "Saxion",
+              "id": 16805731,
+              "id_str": "16805731",
+              "indices": [
+                75,
+                82
+              ]
+            },
+            {
+              "screen_name": "BuroMBODeventer",
+              "name": "buroMBO Deventer",
+              "id": 121090069,
+              "id_str": "121090069",
+              "indices": [
+                83,
+                99
+              ]
+            }
+          ],
+          "urls": [],
+          "media": [
+            {
+              "id": 849511280008409089,
+              "id_str": "849511280008409089",
+              "indices": [
+                100,
+                123
+              ],
+              "media_url": "http:\/\/pbs.twimg.com\/media\/C8oSAh2WsAElBz9.jpg",
+              "media_url_https": "https:\/\/pbs.twimg.com\/media\/C8oSAh2WsAElBz9.jpg",
+              "url": "https:\/\/t.co\/JuJ26RD8xu",
+              "display_url": "pic.twitter.com\/JuJ26RD8xu",
+              "expanded_url": "https:\/\/twitter.com\/Joost_ten_Bulte\/status\/849511317392306176\/photo\/1",
+              "type": "photo",
+              "sizes": {
+                "small": {
+                  "w": 639,
+                  "h": 626,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 639,
+                  "h": 626,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 639,
+                  "h": 626,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 849511280008409089,
+              "id_str": "849511280008409089",
+              "indices": [
+                100,
+                123
+              ],
+              "media_url": "http:\/\/pbs.twimg.com\/media\/C8oSAh2WsAElBz9.jpg",
+              "media_url_https": "https:\/\/pbs.twimg.com\/media\/C8oSAh2WsAElBz9.jpg",
+              "url": "https:\/\/t.co\/JuJ26RD8xu",
+              "display_url": "pic.twitter.com\/JuJ26RD8xu",
+              "expanded_url": "https:\/\/twitter.com\/Joost_ten_Bulte\/status\/849511317392306176\/photo\/1",
+              "type": "photo",
+              "sizes": {
+                "small": {
+                  "w": 639,
+                  "h": 626,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 639,
+                  "h": 626,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 639,
+                  "h": 626,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 160842482,
+          "id_str": "160842482",
+          "name": "Joost ten Bulte",
+          "screen_name": "Joost_ten_Bulte",
+          "location": "Netherlands - Deventer",
+          "description": "Sportbedrijf Deventer; Hogeschool Windesheim \/\/ Calo - Sportmanagement & Beleid; Voetbal & Muziek",
+          "url": "http:\/\/t.co\/P1sZMKlZ69",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http:\/\/t.co\/P1sZMKlZ69",
+                  "expanded_url": "http:\/\/www.sportbedrijfdeventer.nl\/sportiefdeventer",
+                  "display_url": "sportbedrijfdeventer.nl\/sportiefdevent\u2026",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 704,
+          "friends_count": 718,
+          "listed_count": 7,
+          "created_at": "Tue Jun 29 07:50:05 +0000 2010",
+          "favourites_count": 35,
+          "utc_offset": 7200,
+          "time_zone": "Amsterdam",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 2134,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+          "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/2173202656\/image_normal.jpg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/2173202656\/image_normal.jpg",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 5,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "nl"
+      },
+      "is_quote_status": false,
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 19:29:34 +0000 2017",
+      "id": 849705590976897024,
+      "id_str": "849705590976897024",
+      "text": "ChinaTalk Q&amp;A - #5 - Consumer behavior and travelling abroad https:\/\/t.co\/0LzN6WuW50 The Saxion lecture moves on to the topic of tourism.",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https:\/\/t.co\/0LzN6WuW50",
+            "expanded_url": "http:\/\/ow.ly\/vJ4b30aBp2W",
+            "display_url": "ow.ly\/vJ4b30aBp2W",
+            "indices": [
+              65,
+              88
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/www.hootsuite.com\" rel=\"nofollow\"\u003eHootsuite\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 122180088,
+        "id_str": "122180088",
+        "name": "Ed Sander (\u827e\u5fb3)",
+        "screen_name": "EdSander",
+        "location": "Uden",
+        "description": "China blogger\/lecturer @ ChinaTalk.nl \/ China2025.nl. CRM Specialist @ Failsafe.nl. Author (Event Driven Marketing, Follow That Customer!, China Talk 1, 2 & 3).",
+        "url": "https:\/\/t.co\/lMCqf126ES",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/lMCqf126ES",
+                "expanded_url": "http:\/\/www.edsander.com",
+                "display_url": "edsander.com",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 830,
+        "friends_count": 302,
+        "listed_count": 66,
+        "created_at": "Thu Mar 11 21:32:21 +0000 2010",
+        "favourites_count": 303,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 9604,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme15\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/2847184563\/04f0332308258e7dccd78771dff1cbc8_normal.jpeg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/2847184563\/04f0332308258e7dccd78771dff1cbc8_normal.jpeg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/122180088\/1470557186",
+        "profile_link_color": "DD2E44",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Wed Apr 05 19:19:29 +0000 2017",
+      "id": 849703054467371008,
+      "id_str": "849703054467371008",
+      "text": "RT @EMIopzuid: Morgen workshops beide Coe's @hsrotterdam op congres @Ver_Hogescholen. @EMIopzuid met @Saxion binnen thema 'Stad als krachti\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "EMIopzuid",
+            "name": "EMI",
+            "id": 2397714884,
+            "id_str": "2397714884",
+            "indices": [
+              3,
+              13
+            ]
+          },
+          {
+            "screen_name": "hsrotterdam",
+            "name": "Hogeschool Rotterdam",
+            "id": 80815272,
+            "id_str": "80815272",
+            "indices": [
+              44,
+              56
+            ]
+          },
+          {
+            "screen_name": "Ver_Hogescholen",
+            "name": "Ver. Hogescholen",
+            "id": 95194086,
+            "id_str": "95194086",
+            "indices": [
+              68,
+              84
+            ]
+          },
+          {
+            "screen_name": "EMIopzuid",
+            "name": "EMI",
+            "id": 2397714884,
+            "id_str": "2397714884",
+            "indices": [
+              86,
+              96
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              101,
+              108
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/www.echofon.com\/\" rel=\"nofollow\"\u003eEchofon\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 145343627,
+        "id_str": "145343627",
+        "name": "JanPhilip van Mourik",
+        "screen_name": "jpvanmourik",
+        "location": "Noordereiland, in De Hef, Rotterdam",
+        "description": "docent duits op een prachtige school voor mavo havo vwo gymnasium + schoolco\u00f6rdinator OidS\/lerarenopleider-BSL\/VELON\/PLG\/master educational management MEM (NSO)",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1010,
+        "friends_count": 2728,
+        "listed_count": 44,
+        "created_at": "Tue May 18 18:54:37 +0000 2010",
+        "favourites_count": 49,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 12805,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "BADFCD",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme12\/bg.gif",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme12\/bg.gif",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/830833609670008832\/UcFp_yq-_normal.jpg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/830833609670008832\/UcFp_yq-_normal.jpg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/145343627\/1483827381",
+        "profile_link_color": "4A913C",
+        "profile_sidebar_border_color": "F2E195",
+        "profile_sidebar_fill_color": "FFF7CC",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Wed Apr 05 17:03:01 +0000 2017",
+        "id": 849668711988563969,
+        "id_str": "849668711988563969",
+        "text": "Morgen workshops beide Coe's @hsrotterdam op congres @Ver_Hogescholen. @EMIopzuid met @Saxion binnen thema 'Stad al\u2026 https:\/\/t.co\/dWeU75I3fI",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "hsrotterdam",
+              "name": "Hogeschool Rotterdam",
+              "id": 80815272,
+              "id_str": "80815272",
+              "indices": [
+                29,
+                41
+              ]
+            },
+            {
+              "screen_name": "Ver_Hogescholen",
+              "name": "Ver. Hogescholen",
+              "id": 95194086,
+              "id_str": "95194086",
+              "indices": [
+                53,
+                69
+              ]
+            },
+            {
+              "screen_name": "EMIopzuid",
+              "name": "EMI",
+              "id": 2397714884,
+              "id_str": "2397714884",
+              "indices": [
+                71,
+                81
+              ]
+            },
+            {
+              "screen_name": "Saxion",
+              "name": "Saxion",
+              "id": 16805731,
+              "id_str": "16805731",
+              "indices": [
+                86,
+                93
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https:\/\/t.co\/dWeU75I3fI",
+              "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/849668711988563969",
+              "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 2397714884,
+          "id_str": "2397714884",
+          "name": "EMI",
+          "screen_name": "EMIopzuid",
+          "location": "Rotterdam",
+          "description": "@hsrotterdam verbindt via EMI studenten, docenten en partners op Zuid  Zij werken aan oplossingen voor complexe maatschappelijke vraagstukken op Rotterdam Zuid.",
+          "url": "http:\/\/t.co\/T9gSQbfgdj",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http:\/\/t.co\/T9gSQbfgdj",
+                  "expanded_url": "http:\/\/www.emiopzuid.nl",
+                  "display_url": "emiopzuid.nl",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 468,
+          "friends_count": 440,
+          "listed_count": 6,
+          "created_at": "Wed Mar 19 11:37:10 +0000 2014",
+          "favourites_count": 87,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 1096,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/463654537715150848\/qMEVzKYW.png",
+          "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/463654537715150848\/qMEVzKYW.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/532870984412319744\/RcFsKEuC_normal.jpeg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/532870984412319744\/RcFsKEuC_normal.jpeg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2397714884\/1467624739",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": {
+          "id": "ea0a61fa0c646676",
+          "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/ea0a61fa0c646676.json",
+          "place_type": "city",
+          "name": "Rotterdam",
+          "full_name": "Rotterdam, The Netherlands",
+          "country_code": "NL",
+          "country": "The Netherlands",
+          "contained_within": [],
+          "bounding_box": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  3.9418364,
+                  51.8421131
+                ],
+                [
+                  4.6013785,
+                  51.8421131
+                ],
+                [
+                  4.6013785,
+                  52.0068016
+                ],
+                [
+                  3.9418364,
+                  52.0068016
+                ]
+              ]
+            ]
+          },
+          "attributes": {}
+        },
+        "contributors": null,
+        "is_quote_status": true,
+        "quoted_status_id": 849620725308772352,
+        "quoted_status_id_str": "849620725308772352",
+        "quoted_status": {
+          "created_at": "Wed Apr 05 13:52:20 +0000 2017",
+          "id": 849620725308772352,
+          "id_str": "849620725308772352",
+          "text": "De SIA Roadshow gaat nog even door. Morgen zijn we op het congres van de @Ver_Hogescholen. Samen met studentenproje\u2026 https:\/\/t.co\/YL9U4zWJfZ",
+          "truncated": true,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+              {
+                "screen_name": "Ver_Hogescholen",
+                "name": "Ver. Hogescholen",
+                "id": 95194086,
+                "id_str": "95194086",
+                "indices": [
+                  73,
+                  89
+                ]
+              }
+            ],
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/YL9U4zWJfZ",
+                "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/849620725308772352",
+                "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+                "indices": [
+                  117,
+                  140
+                ]
+              }
+            ]
+          },
+          "metadata": {
+            "iso_language_code": "nl",
+            "result_type": "recent"
+          },
+          "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "user": {
+            "id": 313174362,
+            "id_str": "313174362",
+            "name": "SIA",
+            "screen_name": "kennisbundel",
+            "location": "The Netherlands",
+            "description": "Nationaal Regieorgaan Praktijkgericht Onderzoek SIA (onderdeel NWO) versterkt en financiert praktijkgericht onderzoek van hogescholen.",
+            "url": "https:\/\/t.co\/ZcYu8aqOqS",
+            "entities": {
+              "url": {
+                "urls": [
+                  {
+                    "url": "https:\/\/t.co\/ZcYu8aqOqS",
+                    "expanded_url": "http:\/\/www.regieorgaan-sia.nl",
+                    "display_url": "regieorgaan-sia.nl",
+                    "indices": [
+                      0,
+                      23
+                    ]
+                  }
+                ]
+              },
+              "description": {
+                "urls": []
+              }
+            },
+            "protected": false,
+            "followers_count": 1269,
+            "friends_count": 420,
+            "listed_count": 43,
+            "created_at": "Wed Jun 08 07:51:53 +0000 2011",
+            "favourites_count": 234,
+            "utc_offset": 7200,
+            "time_zone": "Amsterdam",
+            "geo_enabled": true,
+            "verified": false,
+            "statuses_count": 2579,
+            "lang": "nl",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "B2DFDA",
+            "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme13\/bg.gif",
+            "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme13\/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/672469124405190656\/Ar9-HS7v_normal.jpg",
+            "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/672469124405190656\/Ar9-HS7v_normal.jpg",
+            "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/313174362\/1487084476",
+            "profile_link_color": "51A644",
+            "profile_sidebar_border_color": "FFFFFF",
+            "profile_sidebar_fill_color": "FFFFFF",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "has_extended_profile": true,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": false,
+            "follow_request_sent": false,
+            "notifications": false,
+            "translator_type": "none"
+          },
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 5,
+          "favorite_count": 1,
+          "favorited": false,
+          "retweeted": false,
+          "possibly_sensitive": false,
+          "lang": "nl"
+        },
+        "retweet_count": 1,
+        "favorite_count": 2,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "nl"
+      },
+      "is_quote_status": true,
+      "quoted_status_id": 849620725308772352,
+      "quoted_status_id_str": "849620725308772352",
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 19:03:45 +0000 2017",
+      "id": 849699093312090114,
+      "id_str": "849699093312090114",
+      "text": "RT @GertjanKnook: Eindpresentatie studenten @Saxion voor @webtonhengelo mbt #eredivisie#fanbase#partnership ambities @nevobo. We kunnen aan\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "GertjanKnook",
+            "name": "Gertjan Knook",
+            "id": 2845196386,
+            "id_str": "2845196386",
+            "indices": [
+              3,
+              16
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              44,
+              51
+            ]
+          },
+          {
+            "screen_name": "webtonhengelo",
+            "name": "Webton Hengelo",
+            "id": 239308870,
+            "id_str": "239308870",
+            "indices": [
+              57,
+              71
+            ]
+          },
+          {
+            "screen_name": "nevobo",
+            "name": "Nevobo",
+            "id": 815382883,
+            "id_str": "815382883",
+            "indices": [
+              117,
+              124
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 815382883,
+        "id_str": "815382883",
+        "name": "Nevobo",
+        "screen_name": "nevobo",
+        "location": "Nieuwegein, Nederland",
+        "description": "Het twitteraccount van de Nederlandse Volleybalbond. Hier lees je alle updates voor #Volleytrainers, #Volleybestuurders en #Volleyscheids",
+        "url": "https:\/\/t.co\/P0iX7e4ZOr",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/P0iX7e4ZOr",
+                "expanded_url": "http:\/\/www.nevobo.nl",
+                "display_url": "nevobo.nl",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1139,
+        "friends_count": 2125,
+        "listed_count": 7,
+        "created_at": "Mon Sep 10 14:50:03 +0000 2012",
+        "favourites_count": 2404,
+        "utc_offset": -36000,
+        "time_zone": "Hawaii",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 674,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/775599743481286656\/YmVS6Oay_normal.jpg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/775599743481286656\/YmVS6Oay_normal.jpg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/815382883\/1473750823",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Wed Apr 05 09:42:15 +0000 2017",
+        "id": 849557786891603968,
+        "id_str": "849557786891603968",
+        "text": "Eindpresentatie studenten @Saxion voor @webtonhengelo mbt #eredivisie#fanbase#partnership ambities @nevobo. We kunn\u2026 https:\/\/t.co\/jKNVeHEdsB",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "Saxion",
+              "name": "Saxion",
+              "id": 16805731,
+              "id_str": "16805731",
+              "indices": [
+                26,
+                33
+              ]
+            },
+            {
+              "screen_name": "webtonhengelo",
+              "name": "Webton Hengelo",
+              "id": 239308870,
+              "id_str": "239308870",
+              "indices": [
+                39,
+                53
+              ]
+            },
+            {
+              "screen_name": "nevobo",
+              "name": "Nevobo",
+              "id": 815382883,
+              "id_str": "815382883",
+              "indices": [
+                99,
+                106
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https:\/\/t.co\/jKNVeHEdsB",
+              "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/849557786891603968",
+              "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 2845196386,
+          "id_str": "2845196386",
+          "name": "Gertjan Knook",
+          "screen_name": "GertjanKnook",
+          "location": "",
+          "description": "Sportliefhebber, en Sportbestuurder  @webtonhengelo ; d\u0117 Volleybalvereniging in Hengelo. Boeien, Verbinden, Presteren.\nEn @Nevobo #Bondsraad.",
+          "url": "https:\/\/t.co\/xcx5UBnsqq",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https:\/\/t.co\/xcx5UBnsqq",
+                  "expanded_url": "http:\/\/www.webton-hengelo.nl",
+                  "display_url": "webton-hengelo.nl",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 86,
+          "friends_count": 175,
+          "listed_count": 1,
+          "created_at": "Sun Oct 26 13:31:01 +0000 2014",
+          "favourites_count": 54,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 691,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+          "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/779005910169559040\/cL7SSVvE_normal.jpg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/779005910169559040\/cL7SSVvE_normal.jpg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2845196386\/1474564750",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 8,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "nl"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 17:42:03 +0000 2017",
+      "id": 849678535031762948,
+      "id_str": "849678535031762948",
+      "text": "RT @twente: Bekijk nu de topvacatures van @thalesnederland, @ecareservices, @UEIcorporate, @carintreggeland en @Saxion. Ga naar https:\/\/t.c\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "twente",
+            "name": "Hightech Twente",
+            "id": 156257013,
+            "id_str": "156257013",
+            "indices": [
+              3,
+              10
+            ]
+          },
+          {
+            "screen_name": "thalesnederland",
+            "name": "Thales Nederland",
+            "id": 118355391,
+            "id_str": "118355391",
+            "indices": [
+              42,
+              58
+            ]
+          },
+          {
+            "screen_name": "ecareservices",
+            "name": "Ecare",
+            "id": 114251646,
+            "id_str": "114251646",
+            "indices": [
+              60,
+              74
+            ]
+          },
+          {
+            "screen_name": "UEIcorporate",
+            "name": "UniversalElectronics",
+            "id": 2866533281,
+            "id_str": "2866533281",
+            "indices": [
+              76,
+              89
+            ]
+          },
+          {
+            "screen_name": "Carintreggeland",
+            "name": "Carintreggeland",
+            "id": 188685526,
+            "id_str": "188685526",
+            "indices": [
+              91,
+              107
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              111,
+              118
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 3236277055,
+        "id_str": "3236277055",
+        "name": "Werken bij Thales",
+        "screen_name": "WerkenBijThales",
+        "location": "The Netherlands",
+        "description": "Volg ons voor het laatste overzicht van vacatures in de hightech sector. Bij Thales werken 1800 enthousiaste mensen oa in de engineering, ICT, sales en software",
+        "url": "https:\/\/t.co\/FQEBaBYQuQ",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https:\/\/t.co\/FQEBaBYQuQ",
+                "expanded_url": "http:\/\/www.thalescareers.nl",
+                "display_url": "thalescareers.nl",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 101,
+        "friends_count": 320,
+        "listed_count": 4,
+        "created_at": "Thu Jun 04 19:19:56 +0000 2015",
+        "favourites_count": 14,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 575,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/670031063108952064\/HlS_7c4M_normal.jpg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/670031063108952064\/HlS_7c4M_normal.jpg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/3236277055\/1448583503",
+        "profile_link_color": "ABB8C2",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Mon Apr 03 14:00:12 +0000 2017",
+        "id": 848897929221898240,
+        "id_str": "848897929221898240",
+        "text": "Bekijk nu de topvacatures van @thalesnederland, @ecareservices, @UEIcorporate, @carintreggeland en @Saxion. Ga naar\u2026 https:\/\/t.co\/VGelKr2hSd",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "thalesnederland",
+              "name": "Thales Nederland",
+              "id": 118355391,
+              "id_str": "118355391",
+              "indices": [
+                30,
+                46
+              ]
+            },
+            {
+              "screen_name": "ecareservices",
+              "name": "Ecare",
+              "id": 114251646,
+              "id_str": "114251646",
+              "indices": [
+                48,
+                62
+              ]
+            },
+            {
+              "screen_name": "UEIcorporate",
+              "name": "UniversalElectronics",
+              "id": 2866533281,
+              "id_str": "2866533281",
+              "indices": [
+                64,
+                77
+              ]
+            },
+            {
+              "screen_name": "Carintreggeland",
+              "name": "Carintreggeland",
+              "id": 188685526,
+              "id_str": "188685526",
+              "indices": [
+                79,
+                95
+              ]
+            },
+            {
+              "screen_name": "Saxion",
+              "name": "Saxion",
+              "id": 16805731,
+              "id_str": "16805731",
+              "indices": [
+                99,
+                106
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https:\/\/t.co\/VGelKr2hSd",
+              "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/848897929221898240",
+              "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/www.coosto.com\" rel=\"nofollow\"\u003eCoosto\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 156257013,
+          "id_str": "156257013",
+          "name": "Hightech Twente",
+          "screen_name": "twente",
+          "location": "",
+          "description": "Twente Branding houdt zich bezig met de nationale en internationale positionering van Twente als innovatieve hightech kennisregio.",
+          "url": "http:\/\/t.co\/VxFq2OOT26",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http:\/\/t.co\/VxFq2OOT26",
+                  "expanded_url": "http:\/\/www.twente.com",
+                  "display_url": "twente.com",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 4213,
+          "friends_count": 878,
+          "listed_count": 67,
+          "created_at": "Wed Jun 16 12:44:09 +0000 2010",
+          "favourites_count": 300,
+          "utc_offset": 7200,
+          "time_zone": "Amsterdam",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 2855,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "B8B8B8",
+          "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/170189769\/get_connected_logo.jpg",
+          "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/170189769\/get_connected_logo.jpg",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/732927138140053504\/-krqiIP6_normal.jpg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/732927138140053504\/-krqiIP6_normal.jpg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/156257013\/1454923441",
+          "profile_link_color": "DB0404",
+          "profile_sidebar_border_color": "616161",
+          "profile_sidebar_fill_color": "F0F0F0",
+          "profile_text_color": "333333",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "nl"
+      },
+      "is_quote_status": false,
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 17:41:53 +0000 2017",
+      "id": 849678490811215879,
+      "id_str": "849678490811215879",
+      "text": "RT @twente: Bekijk nu de topvacatures van @thalesnederland, @ecareservices, @UEIcorporate, @carintreggeland en @Saxion. Ga naar https:\/\/t.c\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "twente",
+            "name": "Hightech Twente",
+            "id": 156257013,
+            "id_str": "156257013",
+            "indices": [
+              3,
+              10
+            ]
+          },
+          {
+            "screen_name": "thalesnederland",
+            "name": "Thales Nederland",
+            "id": 118355391,
+            "id_str": "118355391",
+            "indices": [
+              42,
+              58
+            ]
+          },
+          {
+            "screen_name": "ecareservices",
+            "name": "Ecare",
+            "id": 114251646,
+            "id_str": "114251646",
+            "indices": [
+              60,
+              74
+            ]
+          },
+          {
+            "screen_name": "UEIcorporate",
+            "name": "UniversalElectronics",
+            "id": 2866533281,
+            "id_str": "2866533281",
+            "indices": [
+              76,
+              89
+            ]
+          },
+          {
+            "screen_name": "Carintreggeland",
+            "name": "Carintreggeland",
+            "id": 188685526,
+            "id_str": "188685526",
+            "indices": [
+              91,
+              107
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              111,
+              118
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 118355391,
+        "id_str": "118355391",
+        "name": "Thales Nederland",
+        "screen_name": "thalesnederland",
+        "location": "The Netherlands",
+        "description": "Thales Nederland, established in 1922, experts in naval defence systems, military telecommunication, security systems for public transport and cybersecurity.",
+        "url": "http:\/\/t.co\/RNmJbn1T8Y",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/RNmJbn1T8Y",
+                "expanded_url": "http:\/\/www.thalesgroup.com\/nl",
+                "display_url": "thalesgroup.com\/nl",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 944,
+        "friends_count": 88,
+        "listed_count": 32,
+        "created_at": "Sun Feb 28 12:06:51 +0000 2010",
+        "favourites_count": 67,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 1056,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "131516",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme14\/bg.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/547003817892401153\/gqF9UJDt_normal.jpeg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/547003817892401153\/gqF9UJDt_normal.jpeg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/118355391\/1419250903",
+        "profile_link_color": "009999",
+        "profile_sidebar_border_color": "EEEEEE",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Mon Apr 03 14:00:12 +0000 2017",
+        "id": 848897929221898240,
+        "id_str": "848897929221898240",
+        "text": "Bekijk nu de topvacatures van @thalesnederland, @ecareservices, @UEIcorporate, @carintreggeland en @Saxion. Ga naar\u2026 https:\/\/t.co\/VGelKr2hSd",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "thalesnederland",
+              "name": "Thales Nederland",
+              "id": 118355391,
+              "id_str": "118355391",
+              "indices": [
+                30,
+                46
+              ]
+            },
+            {
+              "screen_name": "ecareservices",
+              "name": "Ecare",
+              "id": 114251646,
+              "id_str": "114251646",
+              "indices": [
+                48,
+                62
+              ]
+            },
+            {
+              "screen_name": "UEIcorporate",
+              "name": "UniversalElectronics",
+              "id": 2866533281,
+              "id_str": "2866533281",
+              "indices": [
+                64,
+                77
+              ]
+            },
+            {
+              "screen_name": "Carintreggeland",
+              "name": "Carintreggeland",
+              "id": 188685526,
+              "id_str": "188685526",
+              "indices": [
+                79,
+                95
+              ]
+            },
+            {
+              "screen_name": "Saxion",
+              "name": "Saxion",
+              "id": 16805731,
+              "id_str": "16805731",
+              "indices": [
+                99,
+                106
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https:\/\/t.co\/VGelKr2hSd",
+              "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/848897929221898240",
+              "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/www.coosto.com\" rel=\"nofollow\"\u003eCoosto\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 156257013,
+          "id_str": "156257013",
+          "name": "Hightech Twente",
+          "screen_name": "twente",
+          "location": "",
+          "description": "Twente Branding houdt zich bezig met de nationale en internationale positionering van Twente als innovatieve hightech kennisregio.",
+          "url": "http:\/\/t.co\/VxFq2OOT26",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http:\/\/t.co\/VxFq2OOT26",
+                  "expanded_url": "http:\/\/www.twente.com",
+                  "display_url": "twente.com",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 4213,
+          "friends_count": 878,
+          "listed_count": 67,
+          "created_at": "Wed Jun 16 12:44:09 +0000 2010",
+          "favourites_count": 300,
+          "utc_offset": 7200,
+          "time_zone": "Amsterdam",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 2855,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "B8B8B8",
+          "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/170189769\/get_connected_logo.jpg",
+          "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/170189769\/get_connected_logo.jpg",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/732927138140053504\/-krqiIP6_normal.jpg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/732927138140053504\/-krqiIP6_normal.jpg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/156257013\/1454923441",
+          "profile_link_color": "DB0404",
+          "profile_sidebar_border_color": "616161",
+          "profile_sidebar_fill_color": "F0F0F0",
+          "profile_text_color": "333333",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "nl"
+      },
+      "is_quote_status": false,
+      "retweet_count": 5,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 17:24:07 +0000 2017",
+      "id": 849674022484836358,
+      "id_str": "849674022484836358",
+      "text": "RT @SCorporaal: Krachtige combinatie #Eshuis @MarkdeLat en #Saxion @ErikHorsthuis : zsm 1e case MOOC Business Analytics online! #twentseinn\u2026",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "Eshuis",
+            "indices": [
+              37,
+              44
+            ]
+          },
+          {
+            "text": "Saxion",
+            "indices": [
+              59,
+              66
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "SCorporaal",
+            "name": "Stephan Corporaal",
+            "id": 47133893,
+            "id_str": "47133893",
+            "indices": [
+              3,
+              14
+            ]
+          },
+          {
+            "screen_name": "MarkdeLat",
+            "name": "Mark de Lat",
+            "id": 90016544,
+            "id_str": "90016544",
+            "indices": [
+              45,
+              55
+            ]
+          },
+          {
+            "screen_name": "ErikHorsthuis",
+            "name": "Erik Horsthuis",
+            "id": 116201611,
+            "id_str": "116201611",
+            "indices": [
+              67,
+              81
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/#!\/download\/ipad\" rel=\"nofollow\"\u003eTwitter for iPad\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 116201611,
+        "id_str": "116201611",
+        "name": "Erik Horsthuis",
+        "screen_name": "ErikHorsthuis",
+        "location": "",
+        "description": "",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 82,
+        "friends_count": 165,
+        "listed_count": 6,
+        "created_at": "Sun Feb 21 15:12:27 +0000 2010",
+        "favourites_count": 75,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 800,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/589860950657859586\/N3RzpYyA_normal.png",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/589860950657859586\/N3RzpYyA_normal.png",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Wed Apr 05 17:13:31 +0000 2017",
+        "id": 849671352881733632,
+        "id_str": "849671352881733632",
+        "text": "Krachtige combinatie #Eshuis @MarkdeLat en #Saxion @ErikHorsthuis : zsm 1e case MOOC Business Analytics online! #twentseinnovatie",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Eshuis",
+              "indices": [
+                21,
+                28
+              ]
+            },
+            {
+              "text": "Saxion",
+              "indices": [
+                43,
+                50
+              ]
+            },
+            {
+              "text": "twentseinnovatie",
+              "indices": [
+                112,
+                129
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "MarkdeLat",
+              "name": "Mark de Lat",
+              "id": 90016544,
+              "id_str": "90016544",
+              "indices": [
+                29,
+                39
+              ]
+            },
+            {
+              "screen_name": "ErikHorsthuis",
+              "name": "Erik Horsthuis",
+              "id": 116201611,
+              "id_str": "116201611",
+              "indices": [
+                51,
+                65
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 47133893,
+          "id_str": "47133893",
+          "name": "Stephan Corporaal",
+          "screen_name": "SCorporaal",
+          "location": "Enschede",
+          "description": "Associate Lector HRM & Smart Industry | Lectoraat Smart Industry & Human Capital | Leren&werken in de 21e eeuw | TechYourFuture | Filosofie | Reizen",
+          "url": "http:\/\/t.co\/UOVYasxpAo",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http:\/\/t.co\/UOVYasxpAo",
+                  "expanded_url": "http:\/\/saxion.nl\/smartindustry",
+                  "display_url": "saxion.nl\/smartindustry",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 888,
+          "friends_count": 287,
+          "listed_count": 32,
+          "created_at": "Sun Jun 14 17:35:48 +0000 2009",
+          "favourites_count": 363,
+          "utc_offset": 7200,
+          "time_zone": "Amsterdam",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 4382,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+          "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/47133893\/1477054634",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "nl"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 17:13:31 +0000 2017",
+      "id": 849671352881733632,
+      "id_str": "849671352881733632",
+      "text": "Krachtige combinatie #Eshuis @MarkdeLat en #Saxion @ErikHorsthuis : zsm 1e case MOOC Business Analytics online! #twentseinnovatie",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "Eshuis",
+            "indices": [
+              21,
+              28
+            ]
+          },
+          {
+            "text": "Saxion",
+            "indices": [
+              43,
+              50
+            ]
+          },
+          {
+            "text": "twentseinnovatie",
+            "indices": [
+              112,
+              129
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "MarkdeLat",
+            "name": "Mark de Lat",
+            "id": 90016544,
+            "id_str": "90016544",
+            "indices": [
+              29,
+              39
+            ]
+          },
+          {
+            "screen_name": "ErikHorsthuis",
+            "name": "Erik Horsthuis",
+            "id": 116201611,
+            "id_str": "116201611",
+            "indices": [
+              51,
+              65
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 47133893,
+        "id_str": "47133893",
+        "name": "Stephan Corporaal",
+        "screen_name": "SCorporaal",
+        "location": "Enschede",
+        "description": "Associate Lector HRM & Smart Industry | Lectoraat Smart Industry & Human Capital | Leren&werken in de 21e eeuw | TechYourFuture | Filosofie | Reizen",
+        "url": "http:\/\/t.co\/UOVYasxpAo",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/UOVYasxpAo",
+                "expanded_url": "http:\/\/saxion.nl\/smartindustry",
+                "display_url": "saxion.nl\/smartindustry",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 888,
+        "friends_count": 287,
+        "listed_count": 32,
+        "created_at": "Sun Jun 14 17:35:48 +0000 2009",
+        "favourites_count": 363,
+        "utc_offset": 7200,
+        "time_zone": "Amsterdam",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 4382,
+        "lang": "nl",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+        "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/154241446\/Sunset_8.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/490921042739613696\/oLUPuHXR_normal.jpeg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/47133893\/1477054634",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 1,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 17:03:01 +0000 2017",
+      "id": 849668711988563969,
+      "id_str": "849668711988563969",
+      "text": "Morgen workshops beide Coe's @hsrotterdam op congres @Ver_Hogescholen. @EMIopzuid met @Saxion binnen thema 'Stad al\u2026 https:\/\/t.co\/dWeU75I3fI",
+      "truncated": true,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "hsrotterdam",
+            "name": "Hogeschool Rotterdam",
+            "id": 80815272,
+            "id_str": "80815272",
+            "indices": [
+              29,
+              41
+            ]
+          },
+          {
+            "screen_name": "Ver_Hogescholen",
+            "name": "Ver. Hogescholen",
+            "id": 95194086,
+            "id_str": "95194086",
+            "indices": [
+              53,
+              69
+            ]
+          },
+          {
+            "screen_name": "EMIopzuid",
+            "name": "EMI",
+            "id": 2397714884,
+            "id_str": "2397714884",
+            "indices": [
+              71,
+              81
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              86,
+              93
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https:\/\/t.co\/dWeU75I3fI",
+            "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/849668711988563969",
+            "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 2397714884,
+        "id_str": "2397714884",
+        "name": "EMI",
+        "screen_name": "EMIopzuid",
+        "location": "Rotterdam",
+        "description": "@hsrotterdam verbindt via EMI studenten, docenten en partners op Zuid  Zij werken aan oplossingen voor complexe maatschappelijke vraagstukken op Rotterdam Zuid.",
+        "url": "http:\/\/t.co\/T9gSQbfgdj",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http:\/\/t.co\/T9gSQbfgdj",
+                "expanded_url": "http:\/\/www.emiopzuid.nl",
+                "display_url": "emiopzuid.nl",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 468,
+        "friends_count": 440,
+        "listed_count": 6,
+        "created_at": "Wed Mar 19 11:37:10 +0000 2014",
+        "favourites_count": 87,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 1096,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/463654537715150848\/qMEVzKYW.png",
+        "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/463654537715150848\/qMEVzKYW.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/532870984412319744\/RcFsKEuC_normal.jpeg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/532870984412319744\/RcFsKEuC_normal.jpeg",
+        "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/2397714884\/1467624739",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": {
+        "id": "ea0a61fa0c646676",
+        "url": "https:\/\/api.twitter.com\/1.1\/geo\/id\/ea0a61fa0c646676.json",
+        "place_type": "city",
+        "name": "Rotterdam",
+        "full_name": "Rotterdam, The Netherlands",
+        "country_code": "NL",
+        "country": "The Netherlands",
+        "contained_within": [],
+        "bounding_box": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                3.9418364,
+                51.8421131
+              ],
+              [
+                4.6013785,
+                51.8421131
+              ],
+              [
+                4.6013785,
+                52.0068016
+              ],
+              [
+                3.9418364,
+                52.0068016
+              ]
+            ]
+          ]
+        },
+        "attributes": {}
+      },
+      "contributors": null,
+      "is_quote_status": true,
+      "quoted_status_id": 849620725308772352,
+      "quoted_status_id_str": "849620725308772352",
+      "quoted_status": {
+        "created_at": "Wed Apr 05 13:52:20 +0000 2017",
+        "id": 849620725308772352,
+        "id_str": "849620725308772352",
+        "text": "De SIA Roadshow gaat nog even door. Morgen zijn we op het congres van de @Ver_Hogescholen. Samen met studentenproje\u2026 https:\/\/t.co\/YL9U4zWJfZ",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "Ver_Hogescholen",
+              "name": "Ver. Hogescholen",
+              "id": 95194086,
+              "id_str": "95194086",
+              "indices": [
+                73,
+                89
+              ]
+            }
+          ],
+          "urls": [
+            {
+              "url": "https:\/\/t.co\/YL9U4zWJfZ",
+              "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/849620725308772352",
+              "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "nl",
+          "result_type": "recent"
+        },
+        "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 313174362,
+          "id_str": "313174362",
+          "name": "SIA",
+          "screen_name": "kennisbundel",
+          "location": "The Netherlands",
+          "description": "Nationaal Regieorgaan Praktijkgericht Onderzoek SIA (onderdeel NWO) versterkt en financiert praktijkgericht onderzoek van hogescholen.",
+          "url": "https:\/\/t.co\/ZcYu8aqOqS",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https:\/\/t.co\/ZcYu8aqOqS",
+                  "expanded_url": "http:\/\/www.regieorgaan-sia.nl",
+                  "display_url": "regieorgaan-sia.nl",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 1269,
+          "friends_count": 420,
+          "listed_count": 43,
+          "created_at": "Wed Jun 08 07:51:53 +0000 2011",
+          "favourites_count": 234,
+          "utc_offset": 7200,
+          "time_zone": "Amsterdam",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 2579,
+          "lang": "nl",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "B2DFDA",
+          "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme13\/bg.gif",
+          "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme13\/bg.gif",
+          "profile_background_tile": false,
+          "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/672469124405190656\/Ar9-HS7v_normal.jpg",
+          "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/672469124405190656\/Ar9-HS7v_normal.jpg",
+          "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/313174362\/1487084476",
+          "profile_link_color": "51A644",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "FFFFFF",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": true,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "nl"
+      },
+      "retweet_count": 1,
+      "favorite_count": 2,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "nl"
+    },
+    {
+      "created_at": "Wed Apr 05 16:33:34 +0000 2017",
+      "id": 849661300418412544,
+      "id_str": "849661300418412544",
+      "text": "The latest Dagelijks nieuws uit Deventer! https:\/\/t.co\/DmXVKmsRbg Thanks to @DeventerRTV @Saxion @DeventerPost #deventer #cleantechregio",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "deventer",
+            "indices": [
+              111,
+              120
+            ]
+          },
+          {
+            "text": "cleantechregio",
+            "indices": [
+              121,
+              136
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "DeventerRTV",
+            "name": "Deventer rtv",
+            "id": 146079556,
+            "id_str": "146079556",
+            "indices": [
+              76,
+              88
+            ]
+          },
+          {
+            "screen_name": "Saxion",
+            "name": "Saxion",
+            "id": 16805731,
+            "id_str": "16805731",
+            "indices": [
+              89,
+              96
+            ]
+          },
+          {
+            "screen_name": "DeventerPost",
+            "name": "Deventer Post",
+            "id": 33528276,
+            "id_str": "33528276",
+            "indices": [
+              97,
+              110
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https:\/\/t.co\/DmXVKmsRbg",
+            "expanded_url": "http:\/\/paper.li\/DeventerVandaag?edition_id=9b9bc420-1a1d-11e7-a800-0cc47a0d1609",
+            "display_url": "paper.li\/DeventerVandaa\u2026",
+            "indices": [
+              42,
+              65
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "nl",
+        "result_type": "recent"
+      },
+      "source": "\u003ca href=\"http:\/\/paper.li\" rel=\"nofollow\"\u003ePaper.li\u003c\/a\u003e",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 160317309,
+        "id_str": "160317309",
+        "name": "Deventer Vandaag",
+        "screen_name": "DeventerVandaag",
+        "location": "",
+        "description": "",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1368,
+        "friends_count": 25,
+        "listed_count": 22,
+        "created_at": "Sun Jun 27 21:06:17 +0000 2010",
+        "favourites_count": 0,
+        "utc_offset": -7200,
+        "time_zone": "Greenland",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 36823,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/117271957\/kranten_979585b.jpg",
+        "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/117271957\/kranten_979585b.jpg",
+        "profile_background_tile": true,
+        "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/1105710447\/deventer_normal.jpg",
+        "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/1105710447\/deventer_normal.jpg",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "nl"
+    }
+  ],
+  "search_metadata": {
+    "completed_in": 0.05,
+    "max_id": 849870248715202560,
+    "max_id_str": "849870248715202560",
+    "next_results": "?max_id=849661300418412543&q=saxion&include_entities=1",
+    "query": "saxion",
+    "refresh_url": "?since_id=849870248715202560&q=saxion&include_entities=1",
+    "count": 15,
+    "since_id": 0,
+    "since_id_str": "0"
+  }
+}

@@ -23,7 +23,7 @@ public class Tweet {
         this.text = text;
     }
     public Tweet(JSONObject object) throws JSONException{
-        //creator = new User( object.getJSONObject("user"));
+        creator = new User( object.getJSONObject("user"));
         createdAt = object.getString("created_at");
         text = object.getString("text");
 

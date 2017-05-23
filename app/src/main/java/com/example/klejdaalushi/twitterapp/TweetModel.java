@@ -1,5 +1,8 @@
 package com.example.klejdaalushi.twitterapp;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import java.util.ArrayList;
 
 /**
@@ -11,7 +14,7 @@ public class TweetModel {
     private ArrayList<Tweet> tweets = new ArrayList<>();
     private ArrayList<User> users = new ArrayList<>();
 
-    private TweetModel () {
+    private TweetModel() {
         users.add(new User("Klejda", "Klejda.A"));
         users.add(new User("John", "John.B"));
         tweets.add(new Tweet(users.get(0), "09.05.2017", "Hey"));
@@ -20,6 +23,17 @@ public class TweetModel {
         tweets.add(new Tweet(users.get(1), "01.07.2017", "Go away"));
         tweets.add(new Tweet(users.get(1), "04.05.2017", "Bye"));
 
+    }
+
+    private TweetModel(JSONArray jsonArray){
+        for (int i = 0; i < jsonArray.length(); i++) {
+            try {
+                tweets.add(new Tweet(jsonArray.getJSONObject(i)));
+
+            }catch (JSONException jex){
+                System.out.println(jex.getMessage());
+            }
+        }
     }
 
     public static TweetModel getInstance() {
