@@ -27,8 +27,11 @@ public class TweetModel {
 
     private TweetModel(JSONArray jsonArray){
         for (int i = 0; i < jsonArray.length(); i++) {
+            Tweet tweet;
             try {
-                tweets.add(new Tweet(jsonArray.getJSONObject(i)));
+                tweet = new Tweet(jsonArray.getJSONObject(i));
+                tweets.add(tweet);
+                users.add(tweet.getCreator());
 
             }catch (JSONException jex){
                 System.out.println(jex.getMessage());

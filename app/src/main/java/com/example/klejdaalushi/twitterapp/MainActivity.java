@@ -19,15 +19,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        listFragment = new ListFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fl_activity_main, listFragment).commit();
-
         try{
             convert();
         }catch (JSONException jex){
             System.out.println(jex.getMessage());
         }
+        tweetModel = new TweetModel(jsonArray);
+
+        listFragment = new ListFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fl_activity_main, listFragment).commit();
+
 
 
     }
