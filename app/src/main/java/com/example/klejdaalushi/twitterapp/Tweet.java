@@ -1,5 +1,8 @@
 package com.example.klejdaalushi.twitterapp;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 /**
@@ -18,6 +21,12 @@ public class Tweet {
         this.creator = creator;
         this.createdAt = createdAt;
         this.text = text;
+    }
+    public Tweet(JSONObject object) throws JSONException{
+        //creator = new User( object.getJSONObject("user"));
+        createdAt = object.getString("created_at");
+        text = object.getString("text");
+
     }
 
     public User getCreator() {
