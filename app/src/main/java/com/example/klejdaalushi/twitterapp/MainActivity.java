@@ -5,26 +5,32 @@ import android.os.Bundle;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
     private static TweetModel tweetModel = TweetModel.getInstance();
-    private android.support.v4.app.ListFragment listFragment;
+    private ListFragment listFragment;
     private JSONArray jsonArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        try{
-            convert();
-        }catch (JSONException jex){
+
+        try {
+            convertJSON();
+            tweetModel.createJSONobjects(jsonArray);
+        }
+        catch (IOException iex) {
+            System.out.println(iex.getMessage());
+        }
+        catch (JSONException jex) {
             System.out.println(jex.getMessage());
         }
-        tweetModel = new TweetModel(jsonArray);
 
         listFragment = new ListFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_activity_main, listFragment).commit();
@@ -33,20 +39,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private String read() throws IOException{
-        InputStream is = this.getResources().openRawResource(R.raw.test);
+    private String readJSONfile() throws IOException{
+        InputStream is = getApplicationContext().getResources().openRawResource(R.raw.test);
         byte[] b = new byte[is.available()];
         is.read(b);
         String output = new String(b);
         return output;
     }
 
-    private void convert() throws JSONException{
-        try {
-            jsonArray = new JSONArray(read());
-        } catch (IOException iex){
-            System.out.println(iex.getMessage());
-        }
+    private void convertJSON() throws JSONException, IOException{
+        JSONObject jsonObject = new JSONObject(readJSONfile());
+        jsonArray = jsonObject.getJSONArray("statuses");
 
     }
+
 }

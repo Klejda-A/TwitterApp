@@ -2,6 +2,7 @@ package com.example.klejdaalushi.twitterapp;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -15,29 +16,8 @@ public class TweetModel {
     private ArrayList<User> users = new ArrayList<>();
 
     private TweetModel() {
-        users.add(new User("Klejda", "Klejda.A"));
-        users.add(new User("John", "John.B"));
-        tweets.add(new Tweet(users.get(0), "09.05.2017", "Hey"));
-        tweets.add(new Tweet(users.get(0), "08.05.2017", "Hello"));
-        tweets.add(new Tweet(users.get(0), "09.03.2017", "Goodbye"));
-        tweets.add(new Tweet(users.get(1), "01.07.2017", "Go away"));
-        tweets.add(new Tweet(users.get(1), "04.05.2017", "Bye"));
-
     }
 
-    private TweetModel(JSONArray jsonArray){
-        for (int i = 0; i < jsonArray.length(); i++) {
-            Tweet tweet;
-            try {
-                tweet = new Tweet(jsonArray.getJSONObject(i));
-                tweets.add(tweet);
-                users.add(tweet.getCreator());
-
-            }catch (JSONException jex){
-                System.out.println(jex.getMessage());
-            }
-        }
-    }
 
     public static TweetModel getInstance() {
         if (tweetModel == null) {
@@ -52,5 +32,35 @@ public class TweetModel {
 
     public ArrayList<User> getUsers() {
         return users;
+    }
+
+
+    public void createJSONobjects(JSONArray jsonArray) throws JSONException {
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject object = jsonArray.getJSONObject(i);
+            tweets.add(createTweet(object));
+        }
+    }
+
+    public Tweet createTweet(JSONObject object) throws JSONException{
+        User creator = createUser(object.getJSONObject("user"));
+        users.add(creator);
+        String createdAt = object.getString("created_at".toString());
+        String text = object.getString("text".toString());
+        String id = object.getString("id_str".toString());
+        Tweet tweet = new Tweet(creator, createdAt, text, id);
+        creator.addTweetToTweets(tweet);
+        return tweet;
+    }
+
+    public User createUser(JSONObject object) throws JSONException {
+        String name = object.getString("name".toString());
+        String screenName = object.getString("screen_name".toString());
+        String id = object.getString("id_str".toString());
+        int friendsCount = object.getInt("friends_count");
+        String location = object.getString("location".toString());
+        String description = object.getString("description".toString());
+        User user = new User(name, screenName, id, friendsCount, location, description);
+        return user;
     }
 }

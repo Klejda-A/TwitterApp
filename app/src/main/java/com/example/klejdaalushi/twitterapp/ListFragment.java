@@ -1,6 +1,7 @@
 package com.example.klejdaalushi.twitterapp;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,7 @@ import android.widget.ListView;
  * Created by Klejda Alushi on 09-May-17.
  */
 
-public class ListFragment extends android.support.v4.app.ListFragment {
+public class ListFragment extends Fragment {
     private static TweetModel tweetModel = TweetModel.getInstance();
     private TweetListAdapter tweetListAdapter;
     private ListView lv_tweets;

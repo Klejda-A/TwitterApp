@@ -17,16 +17,11 @@ public class Tweet {
     private boolean truncated;
     private ArrayList<Entity> entities;
 
-    public Tweet(User creator, String createdAt, String text) {
+    public Tweet(User creator, String createdAt, String text, String id) {
         this.creator = creator;
         this.createdAt = createdAt;
         this.text = text;
-    }
-    public Tweet(JSONObject object) throws JSONException{
-        creator = new User( object.getJSONObject("user"));
-        createdAt = object.getString("created_at");
-        text = object.getString("text");
-
+        this.id = id;
     }
 
     public User getCreator() {

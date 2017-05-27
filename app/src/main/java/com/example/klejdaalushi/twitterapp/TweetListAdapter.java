@@ -18,11 +18,12 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
     private TextView tv_creator;
     private TextView tv_text;
     private TextView tv_createdAt;
+    private ArrayList<Tweet> tweets;
 
 
     public TweetListAdapter(Context context, int resource, ArrayList<Tweet> objects) {
         super(context, resource, objects);
-        objects = tweetModel.getTweets();
+        tweets = objects;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -30,13 +31,13 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.tweet_item, parent, false);
         }
 
-        final Tweet status = tweetModel.getTweets().get(position);
+        final Tweet tweet = tweets.get(position);
         tv_creator = (TextView) convertView.findViewById(R.id.tv_creator);
         tv_text = (TextView) convertView.findViewById(R.id.tv_text);
         tv_createdAt = (TextView) convertView.findViewById(R.id.tv_createdAt);
-        tv_creator.setText(status.getCreator() + "");
-        tv_text.setText(status.getText() + "");
-        tv_createdAt.setText(status.getCreatedAt() + "");
+        tv_creator.setText(tweet.getCreator().getScreenName() + "");
+        tv_text.setText(tweet.getText() + "");
+        tv_createdAt.setText(tweet.getCreatedAt() + "");
 
 
         return convertView;

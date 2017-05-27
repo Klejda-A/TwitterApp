@@ -12,25 +12,33 @@ import java.util.ArrayList;
 public class User {
     private String name;
     private String screenName;
-    private int id;
+    private String id;
+    private int friendsCount;
     private String location;
     private String description;
-    private Tweet[] tweets;
+    private ArrayList<Tweet> tweets = new ArrayList<>();
 
     public User(String name, String screenName) {
         this.name = name;
         this.screenName = screenName;
     }
 
-    public User(JSONObject object) throws JSONException{
-        name = object.getString("name");
-        screenName = object.getString("screen_name");
-        id = object.getInt("id");
-        location = object.getString("location");
-        description = object.getString("description");
-        tweets = new Tweet[object.getJSONArray("statuses").length()];
-        for (int i = 0; i <tweets.length ; i++) {
-            tweets[i] = new Tweet(object.getJSONArray("statuses").getJSONObject(i));
-        }
+
+
+    public User(String name, String screenName, String id, int friendsCount, String location, String description) {
+        this.name = name;
+        this.screenName = screenName;
+        this.id = id;
+        this.friendsCount = friendsCount;
+        this.location = location;
+        this.description = description;
+    }
+
+    public String getScreenName() {
+        return screenName;
+    }
+
+    public void addTweetToTweets(Tweet tweet) {
+        tweets.add(tweet);
     }
 }
