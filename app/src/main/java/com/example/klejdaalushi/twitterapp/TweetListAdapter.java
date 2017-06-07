@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -15,10 +18,13 @@ import java.util.ArrayList;
 
 public class TweetListAdapter extends ArrayAdapter<Tweet>{
     private static TweetModel tweetModel = TweetModel.getInstance();
-    private TextView tv_creator;
+    private TextView tv_creator_name;
+    private TextView tv_creator_screen_name;
     private TextView tv_text;
     private TextView tv_createdAt;
+    private ImageView iv_profile_image;
     private ArrayList<Tweet> tweets;
+
 
 
     public TweetListAdapter(Context context, int resource, ArrayList<Tweet> objects) {
@@ -32,14 +38,20 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
         }
 
         final Tweet tweet = tweets.get(position);
-        tv_creator = (TextView) convertView.findViewById(R.id.tv_creator);
-        tv_text = (TextView) convertView.findViewById(R.id.tv_text);
-        tv_createdAt = (TextView) convertView.findViewById(R.id.tv_createdAt);
-        tv_creator.setText(tweet.getCreator().getScreenName() + "");
+        tv_creator_name = (TextView) convertView.findViewById(R.id.tv_tweet_creator_name);
+        tv_creator_screen_name = (TextView) convertView.findViewById(R.id.tv_tweet_creator_screen_name);
+        tv_text = (TextView) convertView.findViewById(R.id.tv_tweet_text);
+        tv_createdAt = (TextView) convertView.findViewById(R.id.tv_tweet_createdAt);
+        iv_profile_image = (ImageView) convertView.findViewById(R.id.iv_tweet_profile_image);
+        Picasso.with(getContext()).load(tweet.getCreator().getProfileImageURL()).into(iv_profile_image);
+        tv_creator_name.setText(tweet.getCreator().getName() + " ");
+        tv_creator_screen_name.setText("@" + tweet.getCreator().getScreenName() + "");
         tv_text.setText(tweet.getText() + "");
         tv_createdAt.setText(tweet.getCreatedAt() + "");
 
 
         return convertView;
     }
+
+
 }
