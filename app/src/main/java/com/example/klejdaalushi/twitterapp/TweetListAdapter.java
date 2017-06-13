@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by Klejda Alushi on 09-May-17.
@@ -26,11 +27,11 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
     private ArrayList<Tweet> tweets;
 
 
-
     public TweetListAdapter(Context context, int resource, ArrayList<Tweet> objects) {
         super(context, resource, objects);
         tweets = objects;
     }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
@@ -52,6 +53,5 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
 
         return convertView;
     }
-
 
 }

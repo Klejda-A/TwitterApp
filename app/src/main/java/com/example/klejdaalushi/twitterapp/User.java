@@ -1,16 +1,6 @@
 package com.example.klejdaalushi.twitterapp;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
-import android.os.AsyncTask;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
@@ -78,4 +68,5 @@ public class User {
     public String getBannerImageURL() {
         return bannerImageURL;
     }
+
 }

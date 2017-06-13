@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/iv_tweet_profile_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitStart"
-        android:layout_weight="4"/>
+        android:layout_weight="4"
+        android:scaleType="fitStart" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,14 +31,14 @@
             <TextView
                 android:id="@+id/tv_tweet_creator_screen_name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
         <TextView
-        android:id="@+id/tv_tweet_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            android:id="@+id/tv_tweet_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/tv_tweet_createdAt"

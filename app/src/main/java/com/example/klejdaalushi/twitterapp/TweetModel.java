@@ -9,6 +9,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -25,6 +26,7 @@ public class TweetModel {
             .callback("https://www.saxion.nl/hbo-it/auth/twitter/callback")
             .build(TwitterApi.instance());
     private OAuth1AccessToken accessToken;
+    private User currentUser;
 
     private TweetModel() {
     }
@@ -45,17 +47,51 @@ public class TweetModel {
         return users;
     }
 
+    public void getTweets(String response) throws JSONException{
+        JSONArray jsonArray = new JSONArray(response);
+        createJSONobjects(jsonArray);
+    }
+
+
+    public OAuth10aService getAuthService() {
+        return authService;
+    }
+
+    public void setAccessToken(OAuth1AccessToken accessToken) {
+        this.accessToken = accessToken;
+    }
+
+    public OAuth1AccessToken getAccessToken() {
+        return accessToken;
+    }
 
     public void createJSONobjects(JSONArray jsonArray) throws JSONException {
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject object = jsonArray.getJSONObject(i);
-            tweets.add(createTweet(object));
+            tweetModel.getTweets().add(createTweet(object));
         }
+    }
+
+    public ArrayList<Tweet> createTweetsForUser(String response) throws JSONException {
+        JSONArray jsonArray = new JSONArray(response);
+        ArrayList<Tweet> userTweets = new ArrayList<>();
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject object = jsonArray.getJSONObject(i);
+            userTweets.add(createTweet(object));
+        }
+        return userTweets;
     }
 
     public Tweet createTweet(JSONObject object) throws JSONException{
         User creator = createUser(object.getJSONObject("user"));
-        users.add(creator);
+        int userPosition = userExists(creator.getScreenName());
+        if (userPosition > -1) {
+            creator = users.get(userPosition);
+        }
+        else {
+            tweetModel.getUsers().add(creator);
+
+        }
         String createdAt = object.getString("created_at".toString());
         String text = object.getString("text".toString());
         String id = object.getString("id_str".toString());
@@ -76,15 +112,29 @@ public class TweetModel {
         return user;
     }
 
-    public OAuth10aService getAuthService() {
-        return authService;
+    public int userExists(String screenName) {
+        int positionOfUser = -1;
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getScreenName().equals(screenName)) {
+                positionOfUser = i;
+                break;
+            }
+        }
+        return positionOfUser;
     }
 
-    public void setAccessToken(OAuth1AccessToken accessToken) {
-        this.accessToken = accessToken;
+    public User getCurrentUser() {
+        return currentUser;
     }
 
-    public OAuth1AccessToken getAccessToken() {
-        return accessToken;
+    public void createCurrentUser(String responseString) {
+        try {
+            JSONObject userObject = new JSONObject(responseString);
+            currentUser = createUser(userObject);
+            users.add(currentUser);
+        }
+        catch (JSONException jex) {
+            jex.getMessage();
+        }
     }
 }

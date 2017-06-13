@@ -1,5 +1,6 @@
 package com.example.klejdaalushi.twitterapp;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -28,10 +29,22 @@ public class WebViewFragment extends Fragment {
     private static OAuth1RequestToken requestToken;
     private String verifier;
     private OAuth1AccessToken accessToken;
+    private WebViewInterface listener;
 
 
     public WebViewFragment() {
 
+    }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        if (activity instanceof WebViewInterface) {
+            listener = (WebViewInterface) activity;
+        }
+        else {
+            throw new ClassCastException();
+        }
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -55,7 +68,7 @@ public class WebViewFragment extends Fragment {
                         accessToken = new getAccessToken().execute().get();
                         if (accessToken != null) {
                             tweetModel.setAccessToken(accessToken);
-                            new sendRequest().execute().get();
+                            new VerifyCredentials().execute().get();
                         }
                     } catch (InterruptedException e) {
                         e.printStackTrace();
@@ -104,7 +117,8 @@ public class WebViewFragment extends Fragment {
         }
     }
 
-    private class sendRequest extends AsyncTask<Boolean, Void, Boolean> {
+    public class VerifyCredentials extends AsyncTask<Boolean, Void, Boolean> {
+        private String responseString;
 
         @Override
         protected Boolean doInBackground(Boolean... strings) {
@@ -113,13 +127,19 @@ public class WebViewFragment extends Fragment {
             Response response = request.send();
             if (response.isSuccessful()) {
                 try {
-                    String responseString = response.getBody();
+                    responseString = response.getBody();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
                 return true;
             }
             return false;
+        }
+
+        @Override
+        protected void onPostExecute(Boolean aBoolean) {
+            listener.userInfo(responseString);
+
         }
     }
 

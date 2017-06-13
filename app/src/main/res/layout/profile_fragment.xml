@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_profile_activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.klejdaalushi.twitterapp.Activity.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/iv_profile_images"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_profile_banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="matrix"/>
+
+        <ImageView
+            android:id="@+id/iv_profile_profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:padding="4dp"
+            android:background="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_profile_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="post"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_profile_about_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_profile_images"/>
+
+    <LinearLayout
+        android:id="@+id/tv_profile_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_profile_about_user"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_profile_friends_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_profile_followers_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_profile_tweets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_profile_info">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="com.example.klejdaalushi.twitterapp.Activity.MainActivity">
 
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+    </android.support.design.widget.AppBarLayout>
+
     <WebView
         android:id="@+id/wv_main_activity_page"
         android:layout_width="match_parent"
