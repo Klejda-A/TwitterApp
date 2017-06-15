@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements CallbackInterface
         listFragment.refresh();
     }
 
+    //added
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
