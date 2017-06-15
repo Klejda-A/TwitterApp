@@ -1,24 +1,24 @@
 package com.example.klejdaalushi.twitterapp;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.example.klejdaalushi.twitterapp.Activity.MainActivity;
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -29,12 +29,13 @@ import java.util.concurrent.ExecutionException;
  */
 
 public class ListFragment extends Fragment {
-    private static TweetModel tweetModel = TweetModel.getInstance();
+    private TweetModel tweetModel = TweetModel.getInstance();
     private TweetListAdapter tweetListAdapter;
     private ListView lv_tweets;
     private CallbackInterface listener;
     private SwipeRefreshLayout swipeRefreshLayout;
     private ArrayList<Tweet> tweets;
+    private String tweetToBeDeleted = "";
 
     public ListFragment() {
 
@@ -56,12 +57,22 @@ public class ListFragment extends Fragment {
 
         if (getArguments() == null) {
             tweets = tweetModel.getTweets();
-        }
-        else {
+        } else if (getArguments().getString("search") != null) {
+            try {
+                String response = new SearchTweets(getArguments().getString("search")).execute().get();
+                tweets = tweetModel.createTweets("object " + response);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (JSONException jex) {
+                jex.getMessage();
+            }
+        } else {
             String userScreenName = getArguments().getString("user");
             try {
                 String response = new getTweetsFromUser(userScreenName).execute().get();
-                tweets = tweetModel.createTweetsForUser(response);
+                tweets = tweetModel.createTweets(response);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {
@@ -78,7 +89,18 @@ public class ListFragment extends Fragment {
         lv_tweets.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                listener.ListItemClicked(i);
+                listener.ListItemClicked(tweetModel.userExists(tweets.get(i).getCreator().getScreenName()));
+            }
+        });
+
+        lv_tweets.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (tweets.get(i).getCreator().getScreenName().equals(tweetModel.getCurrentUser().getScreenName())) {
+                    tweetToBeDeleted = tweets.get(i).getId();
+                    createDeleteTweetAlertDialog();
+                }
+                return false;
             }
         });
 
@@ -92,8 +114,37 @@ public class ListFragment extends Fragment {
         });
 
 
-
         return rootView;
+    }
+
+    private void deleteTweet() {
+        try {
+            new DeleteTweet(tweetToBeDeleted).execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        refresh();
+    }
+
+    private void createDeleteTweetAlertDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle("Delete");
+        builder.setMessage("Are you sure you want to delete this tweet?");
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+            }
+        });
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                deleteTweet();
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 
     public void refresh() {
@@ -111,6 +162,48 @@ public class ListFragment extends Fragment {
         @Override
         protected String doInBackground(String... params) {
             OAuthRequest request = new OAuthRequest(Verb.GET, url, tweetModel.getAuthService());
+            tweetModel.getAuthService().signRequest(tweetModel.getAccessToken(), request);
+            Response response = request.send();
+            if (response.isSuccessful()) {
+                try {
+                    return response.getBody();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return null;
+        }
+    }
+
+    public class DeleteTweet extends AsyncTask<Boolean, Void, Boolean> {
+        private String tweetID;
+
+        public DeleteTweet(String id) {
+            tweetID = id;
+        }
+
+        @Override
+        protected Boolean doInBackground(Boolean... booleen) {
+            OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.twitter.com/1.1/statuses/destroy/" + tweetID + ".json", tweetModel.getAuthService());
+            tweetModel.getAuthService().signRequest(tweetModel.getAccessToken(), request);
+            Response response = request.send();
+            if (response.isSuccessful()) {
+                return true;
+            }
+            return null;
+        }
+    }
+
+    public class SearchTweets extends AsyncTask<String, Void, String> {
+        private String searchText;
+
+        public SearchTweets(String searchText) {
+            this.searchText = searchText;
+        }
+
+        @Override
+        protected String doInBackground(String... strings) {
+            OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.twitter.com/1.1/search/tweets.json?q=" + searchText, tweetModel.getAuthService());
             tweetModel.getAuthService().signRequest(tweetModel.getAccessToken(), request);
             Response response = request.send();
             if (response.isSuccessful()) {

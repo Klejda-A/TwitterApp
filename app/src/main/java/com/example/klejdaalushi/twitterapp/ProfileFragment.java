@@ -27,7 +27,6 @@ public class ProfileFragment extends Fragment{
     private User user;
     private boolean currentUserProfile = false;
     private ListFragment listFragment;
-    private int position;
     private ProfileInterface listener;
 
     public ProfileFragment() {
@@ -49,15 +48,12 @@ public class ProfileFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.profile_fragment, container, false);
 
-        position = getArguments().getInt("Position");
-        if (position == -1) {
-            user = tweetModel.getUsers().get(position + 1);
+        int position = getArguments().getInt("Position");
+        user = tweetModel.getUsers().get(position);
+        if (user.getScreenName().equals(tweetModel.getCurrentUser().getScreenName())) {
             currentUserProfile = true;
         }
-        else {
-            user = tweetModel.getTweets().get(position).getCreator();
-            currentUserProfile = false;
-        }
+
         iv_banner_image = (ImageView) rootView.findViewById(R.id.iv_profile_banner_image);
         iv_profile_image = (ImageView) rootView.findViewById(R.id.iv_profile_profile_image);
         tv_about_user = (TextView) rootView.findViewById(R.id.tv_profile_about_user);
@@ -93,6 +89,10 @@ public class ProfileFragment extends Fragment{
         getFragmentManager().beginTransaction().replace(R.id.fl_profile_tweets, listFragment).commit();
 
         return rootView;
+    }
+
+    public void refresh() {
+        listFragment.refresh();
     }
 
 }

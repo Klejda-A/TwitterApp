@@ -21,7 +21,7 @@ public class ProfileActivity extends AppCompatActivity implements CallbackInterf
     }
 
     private void init() {
-        final int position = getIntent().getExtras().getInt("POSITION");
+        int position = getIntent().getExtras().getInt("Position");
 
         profileFragment = new ProfileFragment();
         Bundle bundle = new Bundle();
@@ -33,13 +33,13 @@ public class ProfileActivity extends AppCompatActivity implements CallbackInterf
     }
 
     @Override
-    public void ListItemClicked(int position) {
+    public void ListItemClicked(int i) {
 
     }
 
     @Override
     public void onRefresh() {
-//        listFragment.refresh();
+        profileFragment.refresh();
     }
 
     @Override

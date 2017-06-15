@@ -20,7 +20,7 @@
             android:id="@+id/iv_profile_banner_image"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:scaleType="matrix"/>
+            android:scaleType="fitXY"/>
 
         <ImageView
             android:id="@+id/iv_profile_profile_image"

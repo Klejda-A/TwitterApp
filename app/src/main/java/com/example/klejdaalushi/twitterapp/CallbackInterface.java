@@ -6,7 +6,7 @@ package com.example.klejdaalushi.twitterapp;
 
 public interface CallbackInterface {
 
-    void ListItemClicked(int position);
+    void ListItemClicked(int i);
 
     void onRefresh();
 

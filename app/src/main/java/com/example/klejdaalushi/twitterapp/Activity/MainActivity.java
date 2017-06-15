@@ -1,19 +1,18 @@
 package com.example.klejdaalushi.twitterapp.Activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.example.klejdaalushi.twitterapp.CallbackInterface;
 import com.example.klejdaalushi.twitterapp.ListFragment;
 import com.example.klejdaalushi.twitterapp.R;
+import com.example.klejdaalushi.twitterapp.SearchFragment;
 import com.example.klejdaalushi.twitterapp.TweetModel;
 import com.example.klejdaalushi.twitterapp.WebViewFragment;
 import com.example.klejdaalushi.twitterapp.WebViewInterface;
@@ -21,11 +20,8 @@ import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 
-import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.concurrent.ExecutionException;
 
 
@@ -33,12 +29,15 @@ public class MainActivity extends AppCompatActivity implements CallbackInterface
     private static TweetModel tweetModel = TweetModel.getInstance();
     private ListFragment listFragment;
     private WebViewFragment webViewFragment;
+    private SearchFragment searchFragment;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayUseLogoEnabled(true);
 
         webViewFragment = new WebViewFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_activity_main, webViewFragment).commit();
@@ -48,9 +47,9 @@ public class MainActivity extends AppCompatActivity implements CallbackInterface
 
 
     @Override
-    public void ListItemClicked(int position) {
+    public void ListItemClicked(int i) {
         Intent intent = new Intent(this, ProfileActivity.class);
-        intent.putExtra("POSITION", position);
+        intent.putExtra("Position", i);
         startActivity(intent);
     }
 
@@ -72,11 +71,13 @@ public class MainActivity extends AppCompatActivity implements CallbackInterface
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case  R.id.item_main_menu_user_profile:{
-                ListItemClicked(-1);
+                ListItemClicked(tweetModel.userExists(tweetModel.getCurrentUser().getScreenName()));
                 break;
             }
 
             case R.id.item_main_menu_search:{
+                searchFragment = new SearchFragment();
+                getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fl_activity_main, searchFragment).commit();
                 break;
             }
 

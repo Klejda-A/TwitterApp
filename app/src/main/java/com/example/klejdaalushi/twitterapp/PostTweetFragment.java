@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
@@ -24,7 +26,6 @@ public class PostTweetFragment extends android.support.v4.app.Fragment {
     private EditText et_tweet_text;
     private Button btn_discard;
     private Button btn_post;
-    private User user = tweetModel.getUsers().get(0);
     private String text;
 
     public PostTweetFragment() {
@@ -50,7 +51,16 @@ public class PostTweetFragment extends android.support.v4.app.Fragment {
             public void onClick(View view) {
                 try {
                     text = et_tweet_text.getText().toString();
-                    new PostTweet(text).execute().get();
+                    if (!text.equals("")) {
+                        boolean tweetPosted = new PostTweet(text).execute().get();
+                        if (tweetPosted) {
+                            Toast.makeText(getContext(), "Tweet was posted", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    else {
+                        Toast.makeText(getContext(), "Tweet cannot be empty", Toast.LENGTH_SHORT).show();
+                    }
+                    getActivity().onBackPressed();
                 }
                 catch (InterruptedException iex) {
                     iex.getMessage();
@@ -64,24 +74,20 @@ public class PostTweetFragment extends android.support.v4.app.Fragment {
         return rootView;
     }
 
-    private class PostTweet extends AsyncTask<String, Void, String> {
+    private class PostTweet extends AsyncTask<Boolean, Void, Boolean> {
         private String tweetText;
 
-        public PostTweet(String text){
+        public PostTweet(String text) {
             tweetText = text;
         }
 
         @Override
-        protected String doInBackground(String... strings) {
+        protected Boolean doInBackground(Boolean... booleen) {
             OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.twitter.com/1.1/statuses/update.json?status=" + tweetText, tweetModel.getAuthService());
             tweetModel.getAuthService().signRequest(tweetModel.getAccessToken(), request);
             Response response = request.send();
             if (response.isSuccessful()) {
-                try {
-                    return response.getBody();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                return true;
             }
             return null;
         }

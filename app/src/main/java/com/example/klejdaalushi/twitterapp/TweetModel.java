@@ -9,7 +9,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -72,8 +71,16 @@ public class TweetModel {
         }
     }
 
-    public ArrayList<Tweet> createTweetsForUser(String response) throws JSONException {
-        JSONArray jsonArray = new JSONArray(response);
+    public ArrayList<Tweet> createTweets(String response) throws JSONException {
+        JSONArray jsonArray;
+        if (response.startsWith("object")) {
+            response = response.replace("object ", "");
+            JSONObject tweetObject = new JSONObject(response);
+            jsonArray = tweetObject.getJSONArray("statuses");
+        }
+        else {
+            jsonArray = new JSONArray(response);
+        }
         ArrayList<Tweet> userTweets = new ArrayList<>();
         for (int i = 0; i < jsonArray.length(); i++) {
             JSONObject object = jsonArray.getJSONObject(i);

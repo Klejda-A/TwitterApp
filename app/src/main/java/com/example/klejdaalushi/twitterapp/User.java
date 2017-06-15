@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Created by Klejda Alushi on 09-May-17.
  */
 
-public class User {
+public class User{
     private String name;
     private String screenName;
     private String id;
