@@ -2,9 +2,11 @@ package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,7 +79,47 @@ public class UserListFragment extends Fragment {
         lv_users = (ListView) rootView.findViewById(R.id.lv_tweets);
         lv_users.setAdapter(userListAdapter);
 
+        lv_users.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (friendsList == true && user.getScreenName().equals(tweetModel.getCurrentUser().getScreenName())) {
+                    unfollowAlertButton(i);
+                }
+            }
+        });
+
         return rootView;
+    }
+
+    private void unfollowAlertButton(final int userPosition) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle("Unfollow");
+        builder.setMessage("Are you sure you want to unfollow " + users.get(userPosition).getScreenName() + "?");
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+            }
+        });
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                unfollowUser(userPosition);
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
+
+    private void unfollowUser(int userPosition) {
+        try {
+            new UnfollowUser(users.get(userPosition).getScreenName()).execute().get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        users.remove(userPosition);
+        userListAdapter.notifyDataSetChanged();
     }
 
 
@@ -112,6 +154,25 @@ public class UserListFragment extends Fragment {
             else {
                 url = "https://api.twitter.com/1.1/followers/list.json?screen_name=" + userScreenName;
             }
+        }
+    }
+
+    public class UnfollowUser extends AsyncTask<Boolean, Void, Boolean> {
+        private String screenName;
+
+        public UnfollowUser(String userScreenName) {
+            screenName = userScreenName;
+        }
+
+        @Override
+        protected Boolean doInBackground(Boolean... booleen) {
+            OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.twitter.com/1.1/friendships/destroy.json?screen_name=" + screenName, tweetModel.getAuthService());
+            tweetModel.getAuthService().signRequest(tweetModel.getAccessToken(), request);
+            Response response = request.send();
+            if (response.isSuccessful()) {
+                return true;
+            }
+            return null;
         }
     }
 

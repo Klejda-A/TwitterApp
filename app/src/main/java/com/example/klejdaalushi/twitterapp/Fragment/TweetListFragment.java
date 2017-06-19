@@ -39,7 +39,6 @@ public class TweetListFragment extends Fragment {
     private CallbackInterface listener;
     private SwipeRefreshLayout swipeRefreshLayout;
     private ArrayList<Tweet> tweets;
-    private String tweetToBeDeleted = "";
 
     public TweetListFragment() {
 
@@ -101,8 +100,7 @@ public class TweetListFragment extends Fragment {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (tweets.get(i).getCreator().getScreenName().equals(tweetModel.getCurrentUser().getScreenName())) {
-                    tweetToBeDeleted = tweets.get(i).getId();
-                    createDeleteTweetAlertDialog();
+                    createDeleteTweetAlertDialog(i);
                 }
                 return false;
             }
@@ -121,18 +119,19 @@ public class TweetListFragment extends Fragment {
         return rootView;
     }
 
-    private void deleteTweet() {
+    private void deleteTweet(int userPosition) {
         try {
-            new DeleteTweet(tweetToBeDeleted).execute().get();
+            new DeleteTweet(tweets.get(userPosition).getId()).execute().get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+        tweets.remove(userPosition);
         refresh();
     }
 
-    private void createDeleteTweetAlertDialog() {
+    private void createDeleteTweetAlertDialog(final int userPosition) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setTitle("Delete");
         builder.setMessage("Are you sure you want to delete this tweet?");
@@ -144,7 +143,7 @@ public class TweetListFragment extends Fragment {
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                deleteTweet();
+                deleteTweet(userPosition);
             }
         });
         AlertDialog alertDialog = builder.create();
