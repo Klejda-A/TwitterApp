@@ -1,16 +1,19 @@
-package com.example.klejdaalushi.twitterapp;
+package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.app.Activity;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.klejdaalushi.twitterapp.R;
+import com.example.klejdaalushi.twitterapp.TweetModel;
+import com.example.klejdaalushi.twitterapp.Interface.WebViewInterface;
 import com.github.scribejava.core.model.OAuth1AccessToken;
 import com.github.scribejava.core.model.OAuth1RequestToken;
 import com.github.scribejava.core.model.OAuthRequest;

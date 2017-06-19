@@ -89,6 +89,17 @@ public class TweetModel {
         return userTweets;
     }
 
+    public ArrayList<User> createUsers(String response) throws JSONException {
+        JSONObject jsonObject = new JSONObject(response);
+        JSONArray jsonArray = jsonObject.getJSONArray("users");
+        ArrayList<User> followersOrFriends = new ArrayList<>();
+        for (int i = 0; i < jsonArray.length(); i++) {
+            JSONObject object = jsonArray.getJSONObject(i);
+            followersOrFriends.add(createUser(object));
+        }
+        return followersOrFriends;
+    }
+
     public Tweet createTweet(JSONObject object) throws JSONException{
         User creator = createUser(object.getJSONObject("user"));
         int userPosition = userExists(creator.getScreenName());

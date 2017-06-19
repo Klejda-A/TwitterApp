@@ -1,4 +1,4 @@
-package com.example.klejdaalushi.twitterapp;
+package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.klejdaalushi.twitterapp.R;
+import com.example.klejdaalushi.twitterapp.TweetModel;
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;

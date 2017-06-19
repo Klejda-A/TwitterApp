@@ -1,4 +1,4 @@
-package com.example.klejdaalushi.twitterapp;
+package com.example.klejdaalushi.twitterapp.Interface;
 
 /**
  * Created by Klejda Alushi on 28-May-17.

@@ -1,4 +1,4 @@
-package com.example.klejdaalushi.twitterapp;
+package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -13,12 +13,16 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.klejdaalushi.twitterapp.Interface.CallbackInterface;
+import com.example.klejdaalushi.twitterapp.R;
+import com.example.klejdaalushi.twitterapp.Tweet;
+import com.example.klejdaalushi.twitterapp.TweetListAdapter;
+import com.example.klejdaalushi.twitterapp.TweetModel;
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,7 +32,7 @@ import java.util.concurrent.ExecutionException;
  * Created by Klejda Alushi on 09-May-17.
  */
 
-public class ListFragment extends Fragment {
+public class TweetListFragment extends Fragment {
     private TweetModel tweetModel = TweetModel.getInstance();
     private TweetListAdapter tweetListAdapter;
     private ListView lv_tweets;
@@ -37,7 +41,7 @@ public class ListFragment extends Fragment {
     private ArrayList<Tweet> tweets;
     private String tweetToBeDeleted = "";
 
-    public ListFragment() {
+    public TweetListFragment() {
 
     }
 

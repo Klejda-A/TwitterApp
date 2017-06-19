@@ -9,13 +9,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.example.klejdaalushi.twitterapp.CallbackInterface;
-import com.example.klejdaalushi.twitterapp.ListFragment;
+import com.example.klejdaalushi.twitterapp.Interface.CallbackInterface;
+import com.example.klejdaalushi.twitterapp.Fragment.TweetListFragment;
 import com.example.klejdaalushi.twitterapp.R;
-import com.example.klejdaalushi.twitterapp.SearchFragment;
+import com.example.klejdaalushi.twitterapp.Fragment.SearchFragment;
 import com.example.klejdaalushi.twitterapp.TweetModel;
-import com.example.klejdaalushi.twitterapp.WebViewFragment;
-import com.example.klejdaalushi.twitterapp.WebViewInterface;
+import com.example.klejdaalushi.twitterapp.Fragment.WebViewFragment;
+import com.example.klejdaalushi.twitterapp.Interface.WebViewInterface;
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
@@ -27,7 +27,7 @@ import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends AppCompatActivity implements CallbackInterface, WebViewInterface{
     private static TweetModel tweetModel = TweetModel.getInstance();
-    private ListFragment listFragment;
+    private TweetListFragment listFragment;
     private WebViewFragment webViewFragment;
     private SearchFragment searchFragment;
 
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements CallbackInterface
         tweetModel.createCurrentUser(responseString);
         getUserAndTimeline();
 
-        listFragment = new ListFragment();
+        listFragment = new TweetListFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_activity_main, listFragment).commit();
     }
 

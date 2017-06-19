@@ -1,4 +1,4 @@
-package com.example.klejdaalushi.twitterapp;
+package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.klejdaalushi.twitterapp.R;
+import com.example.klejdaalushi.twitterapp.Tweet;
+import com.example.klejdaalushi.twitterapp.TweetModel;
 
 import java.util.ArrayList;
 
@@ -20,7 +24,7 @@ public class SearchFragment extends Fragment {
     private Button btn_search;
     private String searchedText;
     private ArrayList<Tweet> searchTweets = new ArrayList<>();
-    private ListFragment listFragment;
+    private TweetListFragment listFragment;
 
     public SearchFragment() {
 
@@ -45,7 +49,7 @@ public class SearchFragment extends Fragment {
     }
 
     private void createListFragment() {
-        listFragment = new ListFragment();
+        listFragment = new TweetListFragment();
         Bundle bundle = new Bundle();
         bundle.putString("search", searchedText);
         listFragment.setArguments(bundle);
