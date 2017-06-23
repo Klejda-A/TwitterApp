@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.klejdaalushi.twitterapp.Interface.CallbackInterface;
 import com.example.klejdaalushi.twitterapp.Interface.ProfileInterface;
 import com.example.klejdaalushi.twitterapp.R;
 import com.example.klejdaalushi.twitterapp.TweetModel;
@@ -40,7 +41,7 @@ public class UserListFragment extends Fragment {
     private ArrayList<User> users;
     public boolean friendsList = false;
     private String response;
-    private ProfileInterface listener;
+    private CallbackInterface listener;
 
     public UserListFragment() {
 
@@ -49,8 +50,8 @@ public class UserListFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        if (activity instanceof ProfileInterface) {
-            listener = (ProfileInterface) activity;
+        if (activity instanceof CallbackInterface) {
+            listener = (CallbackInterface) activity;
         } else {
             throw new ClassCastException();
         }
@@ -120,8 +121,9 @@ public class UserListFragment extends Fragment {
         }
         users.remove(userPosition);
         userListAdapter.notifyDataSetChanged();
+        user.friendsRemoved();
+        listener.onRefresh();
     }
-
 
     private class GetUsers extends AsyncTask<String, Void, String> {
         private String url;

@@ -16,6 +16,7 @@ public class Tweet{
     private String text;
     private String id;
     private boolean truncated;
+    private String image_url;
     private ArrayList<Entity> entities;
 
     public Tweet(User creator, String createdAt, String text, String id) {
@@ -23,6 +24,18 @@ public class Tweet{
         this.createdAt = createdAt;
         this.text = text;
         this.id = id;
+    }
+
+    public Tweet(User creator, String createdAt, String text, String id, String image_url) {
+        this.creator = creator;
+        this.createdAt = createdAt;
+        this.text = text;
+        this.id = id;
+        this.image_url = image_url;
+    }
+
+    public String getImage_url() {
+        return image_url;
     }
 
     protected Tweet(Parcel in) {

@@ -9,15 +9,11 @@ import com.example.klejdaalushi.twitterapp.Fragment.PostTweetFragment;
 import com.example.klejdaalushi.twitterapp.Fragment.ProfileFragment;
 import com.example.klejdaalushi.twitterapp.Interface.ProfileInterface;
 import com.example.klejdaalushi.twitterapp.R;
-import com.example.klejdaalushi.twitterapp.TweetModel;
-import com.example.klejdaalushi.twitterapp.User;
 
 public class ProfileActivity extends AppCompatActivity implements CallbackInterface, ProfileInterface {
     private PostTweetFragment postTweetFragment;
     private ProfileFragment profileFragment;
     private UserListFragment userListFragment = new UserListFragment();
-    private static TweetModel tweetModel = TweetModel.getInstance();
-
     private int position;
 
     @Override

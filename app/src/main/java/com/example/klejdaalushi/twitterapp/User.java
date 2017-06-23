@@ -61,6 +61,10 @@ public class User{
         return followersCount;
     }
 
+    public void friendsRemoved() {
+        friendsCount --;
+    }
+
     public String getProfileImageURL() {
         return profileImageURL;
     }

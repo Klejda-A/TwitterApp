@@ -46,7 +46,7 @@ public class TweetModel {
         return users;
     }
 
-    public void getTweets(String response) throws JSONException{
+    public void getTweets(String response) throws JSONException {
         JSONArray jsonArray = new JSONArray(response);
         createJSONobjects(jsonArray);
     }
@@ -77,8 +77,7 @@ public class TweetModel {
             response = response.replace("object ", "");
             JSONObject tweetObject = new JSONObject(response);
             jsonArray = tweetObject.getJSONArray("statuses");
-        }
-        else {
+        } else {
             jsonArray = new JSONArray(response);
         }
         ArrayList<Tweet> userTweets = new ArrayList<>();
@@ -100,20 +99,26 @@ public class TweetModel {
         return followersOrFriends;
     }
 
-    public Tweet createTweet(JSONObject object) throws JSONException{
+    public Tweet createTweet(JSONObject object) throws JSONException {
         User creator = createUser(object.getJSONObject("user"));
         int userPosition = userExists(creator.getScreenName());
         if (userPosition > -1) {
             creator = users.get(userPosition);
-        }
-        else {
+        } else {
             tweetModel.getUsers().add(creator);
 
         }
         String createdAt = object.getString("created_at".toString());
         String text = object.getString("text".toString());
         String id = object.getString("id_str".toString());
-        Tweet tweet = new Tweet(creator, createdAt, text, id);
+        String url = "";
+        if (object.has("extended_entities")) {
+            JSONObject entities = object.getJSONObject("extended_entities");
+            JSONArray media = entities.getJSONArray("media");
+            JSONObject mediaURL = media.getJSONObject(0);
+            url = mediaURL.getString("media_url".toString());
+        }
+        Tweet tweet = new Tweet(creator, createdAt, text, id, url);
         creator.addTweetToTweets(tweet);
         return tweet;
     }
@@ -150,8 +155,7 @@ public class TweetModel {
             JSONObject userObject = new JSONObject(responseString);
             currentUser = createUser(userObject);
             users.add(currentUser);
-        }
-        catch (JSONException jex) {
+        } catch (JSONException jex) {
             jex.getMessage();
         }
     }

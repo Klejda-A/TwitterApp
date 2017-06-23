@@ -1,6 +1,7 @@
 package com.example.klejdaalushi.twitterapp;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
     private TextView tv_text;
     private TextView tv_createdAt;
     private ImageView iv_profile_image;
+    private ImageView iv_tweet_image;
     private ArrayList<Tweet> tweets;
 
 
@@ -44,11 +46,20 @@ public class TweetListAdapter extends ArrayAdapter<Tweet>{
         tv_text = (TextView) convertView.findViewById(R.id.tv_tweet_text);
         tv_createdAt = (TextView) convertView.findViewById(R.id.tv_tweet_createdAt);
         iv_profile_image = (ImageView) convertView.findViewById(R.id.iv_tweet_profile_image);
+        iv_tweet_image = (ImageView) convertView.findViewById(R.id.iv_tweet_image);
         Picasso.with(getContext()).load(tweet.getCreator().getProfileImageURL()).into(iv_profile_image);
         tv_creator_name.setText(tweet.getCreator().getName() + " ");
         tv_creator_screen_name.setText("@" + tweet.getCreator().getScreenName() + "");
         tv_text.setText(tweet.getText() + "");
         tv_createdAt.setText(tweet.getCreatedAt() + "");
+        if (tweet.getImage_url() != null && !tweet.getImage_url().isEmpty()) {
+            iv_tweet_image.setVisibility(View.VISIBLE);
+            Picasso.with(getContext()).load(tweet.getImage_url()).into(iv_tweet_image);
+        }
+        else {
+            iv_tweet_image.setVisibility(View.GONE);
+        }
+
 
 
         return convertView;
