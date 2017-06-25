@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements CallbackInterface
     private TweetListFragment listFragment;
     private WebViewFragment webViewFragment;
     private SearchFragment searchFragment;
-    private static final String USER_POSITION = "USER_POSITON";
+    private static final String USER_POSITION = "USER_POSITION";
 
 
     @Override

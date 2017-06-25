@@ -32,7 +32,7 @@ public class ProfileFragment extends Fragment{
     private boolean currentUserProfile = false;
     private TweetListFragment tweetListFragment;
     private ProfileInterface listener;
-    private static final String USER_POSITION = "USER_POSITON";
+    private static final String USER_POSITION = "USER_POSITION";
     private static final String USER_SCREEN_NAME = "USER_SCREEN_NAME";
 
     public ProfileFragment() {

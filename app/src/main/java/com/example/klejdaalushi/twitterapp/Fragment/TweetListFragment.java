@@ -67,7 +67,7 @@ public class TweetListFragment extends Fragment {
                 tweets = tweetModel.getTweets();
             } else if (getArguments().getString(SEARCH_BUTTON) != null) {
                 //string argument is 'search' when the searched tweets should be shown
-                String response = new SearchTweets(getArguments().getString("search")).execute().get();
+                String response = new SearchTweets(getArguments().getString(SEARCH_BUTTON)).execute().get();
                 tweets = tweetModel.createTweets("object " + response);
             } else {
                 //else string argument is 'user' when the tweets that a certain user has posted, need to be shown
