@@ -13,11 +13,10 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 
 /**
- * Created by Klejda Alushi on 19-Jun-17.
+ * Class which sets user information to the list fragment
  */
 
 public class UserListAdapter extends ArrayAdapter<User>{
-    private static TweetModel tweetModel = TweetModel.getInstance();
     private TextView tv_name;
     private TextView tv_screen_name;
     private TextView tv_description;
@@ -37,10 +36,12 @@ public class UserListAdapter extends ArrayAdapter<User>{
         }
 
         final User user = users.get(position);
+
         tv_name = (TextView) convertView.findViewById(R.id.tv_user_name);
         tv_screen_name = (TextView) convertView.findViewById(R.id.tv_user_screen_name);
         iv_profile_image = (ImageView) convertView.findViewById(R.id.iv_user_profile_image);
         tv_description = (TextView) convertView.findViewById(R.id.tv_user_decription);
+
         Picasso.with(getContext()).load(user.getProfileImageURL()).into(iv_profile_image);
         tv_name.setText(user.getName() + " ");
         tv_screen_name.setText("@" + user.getScreenName() + "");

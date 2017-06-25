@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.klejdaalushi.twitterapp.R;
@@ -15,12 +14,11 @@ import com.example.klejdaalushi.twitterapp.TweetModel;
 import com.github.scribejava.core.model.OAuthRequest;
 import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
-
-import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by Klejda Alushi on 13-Jun-17.
+ * Fragment with which a user can post a tweet
+ * Inflates the post_tweet_fragment layout
  */
 
 public class PostTweetFragment extends android.support.v4.app.Fragment {
@@ -53,6 +51,7 @@ public class PostTweetFragment extends android.support.v4.app.Fragment {
             public void onClick(View view) {
                 try {
                     text = et_tweet_text.getText().toString();
+                    //checks if text is empty, since user cant post empty tweet
                     if (!text.equals("")) {
                         boolean tweetPosted = new PostTweet(text).execute().get();
                         if (tweetPosted) {
@@ -76,6 +75,9 @@ public class PostTweetFragment extends android.support.v4.app.Fragment {
         return rootView;
     }
 
+    /**
+     * AsyncTask which sends a post request to twitter server
+     */
     private class PostTweet extends AsyncTask<Boolean, Void, Boolean> {
         private String tweetText;
 
@@ -83,6 +85,11 @@ public class PostTweetFragment extends android.support.v4.app.Fragment {
             tweetText = text;
         }
 
+        /**
+         * Creates, signs, and send the request
+         * @param booleen
+         * @return whether the response is successful or not
+         */
         @Override
         protected Boolean doInBackground(Boolean... booleen) {
             OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.twitter.com/1.1/statuses/update.json?status=" + tweetText, tweetModel.getAuthService());

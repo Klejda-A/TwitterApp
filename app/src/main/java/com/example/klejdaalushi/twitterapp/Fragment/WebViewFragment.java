@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by Klejda Alushi on 07-Jun-17.
+ * Fragment class which shows the webview which allows user to log in
  */
 
 public class WebViewFragment extends Fragment {
@@ -55,7 +55,7 @@ public class WebViewFragment extends Fragment {
 
         String authUrl = null;
         try {
-            authUrl = new authUrl().execute().get();
+            authUrl = new AuthUrl().execute().get();
         } catch (Exception e) {
             e.getMessage();
         }
@@ -65,10 +65,12 @@ public class WebViewFragment extends Fragment {
         wv_website.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                //checks whether url is the callback url
                 if (url.startsWith("https://www.saxion.nl/hbo-it/auth/twitter/callback")) {
+                    //creates verifier from url
                     verifier = Uri.parse(url).getQueryParameter("oauth_verifier");
                     try {
-                        accessToken = new getAccessToken().execute().get();
+                        accessToken = new AccessToken().execute().get();
                         if (accessToken != null) {
                             tweetModel.setAccessToken(accessToken);
                             new VerifyCredentials().execute().get();
@@ -85,12 +87,13 @@ public class WebViewFragment extends Fragment {
             }
         });
 
-
-
         return rootView;
     }
 
-    private class authUrl extends AsyncTask<String, Void, String> {
+    /**
+     * AsyncTask which gets the authUrl from twitter server
+     */
+    private class AuthUrl extends AsyncTask<String, Void, String> {
 
         @Override
         protected String doInBackground(String... params) {
@@ -106,7 +109,10 @@ public class WebViewFragment extends Fragment {
     }
 
 
-    private class getAccessToken extends AsyncTask<OAuth1AccessToken, Void, OAuth1AccessToken> {
+    /**
+     * AsyncTask which gets the access token from twitter server
+     */
+    private class AccessToken extends AsyncTask<OAuth1AccessToken, Void, OAuth1AccessToken> {
 
         @Override
         protected OAuth1AccessToken doInBackground(OAuth1AccessToken... params) {
@@ -120,9 +126,17 @@ public class WebViewFragment extends Fragment {
         }
     }
 
+    /**
+     * AsyncClass which verifies the log in information of user
+     */
     public class VerifyCredentials extends AsyncTask<Boolean, Void, Boolean> {
         private String responseString;
 
+        /**
+         * Creates, signs, and send the GET request to verify user credentials
+         * @param strings
+         * @return whether the response is successful or not
+         */
         @Override
         protected Boolean doInBackground(Boolean... strings) {
             OAuthRequest request = new OAuthRequest(Verb.GET, "https://api.twitter.com/1.1/account/verify_credentials.json", tweetModel.getAuthService());
@@ -139,6 +153,10 @@ public class WebViewFragment extends Fragment {
             return false;
         }
 
+        /**
+         * Method which sends the responseString to the main activity
+         * @param aBoolean
+         */
         @Override
         protected void onPostExecute(Boolean aBoolean) {
             listener.userInfo(responseString);

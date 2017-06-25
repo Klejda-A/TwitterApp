@@ -1,13 +1,8 @@
 package com.example.klejdaalushi.twitterapp;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-
 /**
- * Created by Klejda Alushi on 09-May-17.
+ * Class that represents a tweet/status, which has a creator, a date on which it is created, text, an id, and
+ * an image (if applicable)
  */
 
 public class Tweet{
@@ -15,36 +10,27 @@ public class Tweet{
     private String createdAt;
     private String text;
     private String id;
-    private boolean truncated;
-    private String image_url;
-    private ArrayList<Entity> entities;
+    private String imageUrl;
 
-    public Tweet(User creator, String createdAt, String text, String id) {
+    /**
+     * Constructor for the tweet class, which sets all the tweet attributes
+     * @param creator
+     * @param createdAt
+     * @param text
+     * @param id
+     * @param imageUrl
+     */
+    public Tweet(User creator, String createdAt, String text, String id, String imageUrl) {
         this.creator = creator;
         this.createdAt = createdAt;
         this.text = text;
         this.id = id;
+        this.imageUrl = imageUrl;
     }
 
-    public Tweet(User creator, String createdAt, String text, String id, String image_url) {
-        this.creator = creator;
-        this.createdAt = createdAt;
-        this.text = text;
-        this.id = id;
-        this.image_url = image_url;
+    public String getImageUrl() {
+        return imageUrl;
     }
-
-    public String getImage_url() {
-        return image_url;
-    }
-
-    protected Tweet(Parcel in) {
-        createdAt = in.readString();
-        text = in.readString();
-        id = in.readString();
-        truncated = in.readByte() != 0;
-    }
-
 
     public User getCreator() {
         return creator;

@@ -1,7 +1,7 @@
 package com.example.klejdaalushi.twitterapp.Interface;
 
 /**
- * Created by Klejda Alushi on 07-Jun-17.
+ * Interface used to communicate between activities and fragments
  */
 
 public interface WebViewInterface {

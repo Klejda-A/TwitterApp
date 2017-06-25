@@ -15,6 +15,7 @@ public class ProfileActivity extends AppCompatActivity implements CallbackInterf
     private ProfileFragment profileFragment;
     private UserListFragment userListFragment = new UserListFragment();
     private int position;
+    private static final String USER_POSITION = "USER_POSITION";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +24,12 @@ public class ProfileActivity extends AppCompatActivity implements CallbackInterf
         init();
     }
 
+    /**
+     * Method which gets the position of the user from the intent
+     * And starts the profile fragment
+     */
     private void init() {
-        position = getIntent().getExtras().getInt("Position");
+        position = getIntent().getExtras().getInt(USER_POSITION);
 
         createProfileFragment();
     }
@@ -32,16 +37,19 @@ public class ProfileActivity extends AppCompatActivity implements CallbackInterf
     private void createProfileFragment() {
         profileFragment = new ProfileFragment();
         Bundle bundle = new Bundle();
-        bundle.putInt("Position", position);
+        bundle.putInt(USER_POSITION, position);
         profileFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().replace(R.id.fl_profile_activity, profileFragment).commit();
     }
 
     @Override
-    public void ListItemClicked(int i) {
+    public void ListItemClicked(int position) {
 
     }
 
+    /**
+     * Method which refreses the whole profile fragment
+     */
     @Override
     public void onRefresh() {
         profileFragment.refresh();
@@ -65,9 +73,12 @@ public class ProfileActivity extends AppCompatActivity implements CallbackInterf
         addUserListFragment();
     }
 
+    /**
+     * Creates a user list fragment, and passes the position of the user
+     */
     private void addUserListFragment() {
         Bundle bundle = new Bundle();
-        bundle.putInt("Position", position);
+        bundle.putInt(USER_POSITION, position);
         userListFragment.setArguments(bundle);
         getSupportFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.fl_profile_activity, userListFragment).commit();
     }

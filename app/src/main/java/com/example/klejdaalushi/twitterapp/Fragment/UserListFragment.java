@@ -1,7 +1,6 @@
 package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -14,7 +13,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.klejdaalushi.twitterapp.Interface.CallbackInterface;
-import com.example.klejdaalushi.twitterapp.Interface.ProfileInterface;
 import com.example.klejdaalushi.twitterapp.R;
 import com.example.klejdaalushi.twitterapp.TweetModel;
 import com.example.klejdaalushi.twitterapp.User;
@@ -24,13 +22,12 @@ import com.github.scribejava.core.model.Response;
 import com.github.scribejava.core.model.Verb;
 
 import org.json.JSONException;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Created by Klejda Alushi on 19-Jun-17.
+ * Fragment which creates a list of users
  */
 
 public class UserListFragment extends Fragment {
@@ -39,9 +36,11 @@ public class UserListFragment extends Fragment {
     private ListView lv_users;
     private User user;
     private ArrayList<User> users;
+    //tells whether the list is for friends or followers
     public boolean friendsList = false;
     private String response;
     private CallbackInterface listener;
+    private static final String USER_POSITION = "USER_POSITION";
 
     public UserListFragment() {
 
@@ -61,7 +60,7 @@ public class UserListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.list_fragment, container, false);
 
-        int position = getArguments().getInt("Position");
+        int position = getArguments().getInt(USER_POSITION);
         user = tweetModel.getUsers().get(position);
         try {
             response = new GetUsers(user.getScreenName()).execute().get();
@@ -83,8 +82,9 @@ public class UserListFragment extends Fragment {
         lv_users.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //user can only unfollow someone when they are the user logged in, and they are ont he friends list
                 if (friendsList == true && user.getScreenName().equals(tweetModel.getCurrentUser().getScreenName())) {
-                    unfollowAlertButton(i);
+                    unfollowAlertDialog(i);
                 }
             }
         });
@@ -92,7 +92,11 @@ public class UserListFragment extends Fragment {
         return rootView;
     }
 
-    private void unfollowAlertButton(final int userPosition) {
+    /**
+     * Method which creates an alert dialog, to verify whether user wants to unfollow certain user
+     * @param userPosition
+     */
+    private void unfollowAlertDialog(final int userPosition) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setTitle("Unfollow");
         builder.setMessage("Are you sure you want to unfollow " + users.get(userPosition).getScreenName() + "?");
@@ -111,6 +115,10 @@ public class UserListFragment extends Fragment {
         alertDialog.show();
     }
 
+    /**
+     * Method to unfollow user, which calls the UnfollowUser AsyncTask
+     * @param userPosition
+     */
     private void unfollowUser(int userPosition) {
         try {
             new UnfollowUser(users.get(userPosition).getScreenName()).execute().get();
@@ -125,14 +133,27 @@ public class UserListFragment extends Fragment {
         listener.onRefresh();
     }
 
+    /**
+     * AsyncTask which gets a list users
+     */
     private class GetUsers extends AsyncTask<String, Void, String> {
         private String url;
         private String userScreenName;
 
+        /**
+         * Constructor for the GetUsers class, and passes the screen name of user
+         * @param userScreenName
+         */
         public GetUsers(String userScreenName) {
             this.userScreenName = userScreenName;
         }
 
+        /**
+         * Creates, signs, and sends the GET request to twitter server
+         * @param params
+         * @return the body of response, if response is successful
+         * else returns null
+         */
         @Override
         protected String doInBackground(String... params) {
             getUrl();
@@ -149,6 +170,9 @@ public class UserListFragment extends Fragment {
             return null;
         }
 
+        /**
+         * Method which checks whether the friends or the followers list should be retrieved, and creates the url
+         */
         private void getUrl() {
             if (friendsList == true) {
                 url = "https://api.twitter.com/1.1/friends/list.json?screen_name=" + userScreenName;
@@ -159,13 +183,25 @@ public class UserListFragment extends Fragment {
         }
     }
 
+    /**
+     * AsyncTask which unfollows a certain user
+     */
     public class UnfollowUser extends AsyncTask<Boolean, Void, Boolean> {
         private String screenName;
 
+        /**
+         * Constructor for UnfollowUser class, which passes the screen name of user to be unfollowed
+         * @param userScreenName
+         */
         public UnfollowUser(String userScreenName) {
             screenName = userScreenName;
         }
 
+        /**
+         * Creates, signs, and send the POST request to unfollow user
+         * @param booleen
+         * @return whether response was successful
+         */
         @Override
         protected Boolean doInBackground(Boolean... booleen) {
             OAuthRequest request = new OAuthRequest(Verb.POST, "https://api.twitter.com/1.1/friendships/destroy.json?screen_name=" + screenName, tweetModel.getAuthService());

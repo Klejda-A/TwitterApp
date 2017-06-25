@@ -1,7 +1,6 @@
 package com.example.klejdaalushi.twitterapp.Fragment;
 
 import android.app.Activity;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,15 +14,10 @@ import com.example.klejdaalushi.twitterapp.Interface.ProfileInterface;
 import com.example.klejdaalushi.twitterapp.R;
 import com.example.klejdaalushi.twitterapp.TweetModel;
 import com.example.klejdaalushi.twitterapp.User;
-import com.github.scribejava.core.model.OAuthRequest;
-import com.github.scribejava.core.model.Response;
-import com.github.scribejava.core.model.Verb;
 import com.squareup.picasso.Picasso;
 
-import java.util.concurrent.ExecutionException;
-
 /**
- * Created by Klejda Alushi on 13-Jun-17.
+ * Fragment class which shows the profile of a certain user, and inflates the profile_fragment layout
  */
 
 public class ProfileFragment extends Fragment{
@@ -38,6 +32,8 @@ public class ProfileFragment extends Fragment{
     private boolean currentUserProfile = false;
     private TweetListFragment tweetListFragment;
     private ProfileInterface listener;
+    private static final String USER_POSITION = "USER_POSITON";
+    private static final String USER_SCREEN_NAME = "USER_SCREEN_NAME";
 
     public ProfileFragment() {
     }
@@ -58,8 +54,10 @@ public class ProfileFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.profile_fragment, container, false);
 
-        final int position = getArguments().getInt("Position");
+        final int position = getArguments().getInt(USER_POSITION);
         user = tweetModel.getUsers().get(position);
+        //checks if the user in the argument is the user who is logged in
+        //since those users have more functions
         if (user.getScreenName().equals(tweetModel.getCurrentUser().getScreenName())) {
             currentUserProfile = true;
         }
@@ -70,6 +68,7 @@ public class ProfileFragment extends Fragment{
         btn_followers_count = (Button) rootView.findViewById(R.id.tv_profile_followers_count);
         btn_friends_count = (Button) rootView.findViewById(R.id.tv_profile_friends_count);
         btn_post_tweet = (Button) rootView.findViewById(R.id.btn_profile_post);
+        //if the profile is not of the current user, the post button is invisible
         if (currentUserProfile == false) {
             btn_post_tweet.setVisibility(View.GONE);
         }
@@ -106,13 +105,16 @@ public class ProfileFragment extends Fragment{
 
         tweetListFragment = new TweetListFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("user", user.getScreenName());
+        bundle.putString(USER_SCREEN_NAME, user.getScreenName());
         tweetListFragment.setArguments(bundle);
         getFragmentManager().beginTransaction().replace(R.id.fl_profile_tweets, tweetListFragment).commit();
 
         return rootView;
     }
 
+    /**
+     * Refreshes the profile
+     */
     public void refresh() {
         tweetListFragment.refresh();
     }

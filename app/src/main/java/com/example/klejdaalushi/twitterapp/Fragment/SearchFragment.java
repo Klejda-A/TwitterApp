@@ -11,20 +11,19 @@ import android.widget.EditText;
 import com.example.klejdaalushi.twitterapp.R;
 import com.example.klejdaalushi.twitterapp.Tweet;
 import com.example.klejdaalushi.twitterapp.TweetModel;
-
 import java.util.ArrayList;
 
 /**
- * Created by Klejda Alushi on 13-Jun-17.
+ * Fragment class which enables user to search for tweets
+ * Inflates the search_fragment layout
  */
 
 public class SearchFragment extends Fragment {
-    private TweetModel tweetModel = TweetModel.getInstance();
     private EditText et_search_bar;
     private Button btn_search;
     private String searchedText;
-    private ArrayList<Tweet> searchTweets = new ArrayList<>();
     private TweetListFragment listFragment;
+    private static final String SEARCH_BUTTON = "SEARCH_BUTTON";
 
     public SearchFragment() {
 
@@ -48,10 +47,14 @@ public class SearchFragment extends Fragment {
         return rootView;
     }
 
+    /**
+     * Creates the list fragment to be shown in frame layout
+     * Passes the text to be searched in a bundle
+     */
     private void createListFragment() {
         listFragment = new TweetListFragment();
         Bundle bundle = new Bundle();
-        bundle.putString("search", searchedText);
+        bundle.putString(SEARCH_BUTTON, searchedText);
         listFragment.setArguments(bundle);
         getFragmentManager().beginTransaction().replace(R.id.fl_search, listFragment).commit();
     }

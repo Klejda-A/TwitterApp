@@ -1,12 +1,12 @@
 package com.example.klejdaalushi.twitterapp.Interface;
 
 /**
- * Created by Klejda Alushi on 28-May-17.
+ * Interface used to communicate between activities and fragments
  */
 
 public interface CallbackInterface {
 
-    void ListItemClicked(int i);
+    void ListItemClicked(int position);
 
     void onRefresh();
 

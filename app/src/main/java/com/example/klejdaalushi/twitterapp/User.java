@@ -1,10 +1,8 @@
 package com.example.klejdaalushi.twitterapp;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 
 /**
- * Created by Klejda Alushi on 09-May-17.
+ * Class that represents a user, which has several attributes
  */
 
 public class User{
@@ -17,8 +15,19 @@ public class User{
     private String description;
     private String profileImageURL;
     private String bannerImageURL;
-    public ArrayList<Tweet> tweets = new ArrayList<>();
 
+    /**
+     * Constructor for the user class, which sets all the user attributes
+     * @param name
+     * @param screenName
+     * @param id
+     * @param friendsCount
+     * @param followersCount
+     * @param location
+     * @param description
+     * @param profileImageURL
+     * @param bannerImageURL
+     */
     public User(String name, String screenName, String id, int friendsCount,
                 int followersCount, String location, String description,
                 String profileImageURL, String bannerImageURL) {
@@ -33,16 +42,16 @@ public class User{
         this.bannerImageURL = bannerImageURL;
     }
 
+    public void friendsRemoved() {
+        friendsCount --;
+    }
+
     public String getScreenName() {
         return screenName;
     }
 
     public String getName() {
         return name;
-    }
-
-    public void addTweetToTweets(Tweet tweet) {
-        tweets.add(tweet);
     }
 
     public int getFriendsCount() {
@@ -59,10 +68,6 @@ public class User{
 
     public int getFollowersCount() {
         return followersCount;
-    }
-
-    public void friendsRemoved() {
-        friendsCount --;
     }
 
     public String getProfileImageURL() {
